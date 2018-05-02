@@ -1,6 +1,8 @@
 const Quote = (props) => (
     <div>
-        <h2>Another quote for social proof</h2>
+        <h2>
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+        </h2>
     </div>
 )
 

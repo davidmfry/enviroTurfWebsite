@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
 
+import './index.css';
+
 // Component Sections
-import IntroSection from "../components/IntroSection";
+import IntroSection from "../components/InfoSection/IntroSection";
 import WhoWeAre from "../components/WhoWeAre";
 import BigQuote from "../components/BigQuote";
 import WhatWeProvide from "../components/WhatWeProvide";
@@ -15,24 +17,24 @@ import Products from "../components/Products";
 import Map from "../components/Map/Map";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/NavBar/NavBar";
 
 const Index = (props) => (
     <Layout>
-        <IntroSection/>
         <NavBar/>
-        <WhoWeAre/>
-        <BigQuote/>
-        <WhatWeProvide/>
-        <MeetOurTeam/>
-        <Quote/>
-        <VideoSection/>
-        <LatestNews/>
-        <Projects/>
-        <Products/>
-        <Map/>
-        <ContactUs/>
-        <Footer/>
+        <IntroSection/>
+        {/*<WhoWeAre/>*/}
+        {/*<BigQuote/>*/}
+        {/*<WhatWeProvide/>*/}
+        {/*<MeetOurTeam/>*/}
+        {/*<Quote/>*/}
+        {/*<VideoSection/>*/}
+        {/*<LatestNews/>*/}
+        {/*<Projects/>*/}
+        {/*<Products/>*/}
+        {/*<Map/>*/}
+        {/*<ContactUs/>*/}
+        {/*<Footer/>*/}
     </Layout>
 )
 

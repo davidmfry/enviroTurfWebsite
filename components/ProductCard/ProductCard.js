@@ -1,6 +1,7 @@
 const ProductCard = (props) => (
     <div>
-        <h2>Product</h2>
+        <img src={props.image} alt=""/>
+        <p><strong>{props.title}</strong>{props.description}</p>
     </div>
 )
 

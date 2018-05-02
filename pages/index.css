@@ -1,0 +1,59 @@
+/*font-family: 'Rubik', sans-serif;*/
+
+:root {
+    --etorange: #FF910E;
+    --etgreen: #0D8703;
+    --etgray: #727D86;
+    --etblack: #20242C;
+    --etwhite: #ECECEC;
+    --shadow: 0 1px 5px rgba(104,104,105,0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    color: var(--etblack);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--etwhite);
+    line-height: 1.4;
+}
+
+.container {
+    display: grid;
+}
+
+/*h1 {*/
+    /*font-family: 'Rubik', sans-serif;*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*h2 {*/
+    /*font-family: 'Rubik', sans-serif;*/
+    /*font-weight: bold*/
+/*}*/
+
+/*h3 {*/
+    /*font-family: 'Rubik', sans-serif;*/
+    /*font-weight: bold*/
+/*}*/
+
+/*h4 {*/
+    /*font-family: 'Rubik', sans-serif;*/
+    /*font-weight: bold*/
+/*}*/
+
+/*h5 {*/
+    /*font-family: 'Rubik', sans-serif;*/
+    /*font-weight: bold*/
+/*}*/
+
+/*h6 {*/
+    /*font-family: 'Rubik', sans-serif;*/
+    /*font-weight: bold*/
+/*}*/
+
+
