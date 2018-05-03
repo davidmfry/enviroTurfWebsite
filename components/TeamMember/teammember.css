@@ -1,0 +1,23 @@
+.team-member-container{
+    background-color: var(--etblack);
+    color: var(--etwhite);
+}
+
+.team-member-group {
+    padding-top: 75px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px
+
+}
+
+.team-member-linkedin {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("/static/social/linkedin-icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-left: -40px;
+}

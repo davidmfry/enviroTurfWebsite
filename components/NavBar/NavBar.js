@@ -5,12 +5,6 @@ class NavBar extends React.Component
     {
         return (
             <div className="main-nav">
-                <img className='main-nav-logo'
-                     src="/static/img/Logo.png"
-                     alt="EnviroTurf logo"
-                     width="200"
-                     height="150"
-                />
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">WHO WE ARE</a></li>

@@ -1,0 +1,9 @@
+.video-item-container {
+    min-height: 450px;
+    text-align: center;
+}
+
+.video-item-container p {
+    font-weight: lighter;
+    font-size: 1rem;
+}

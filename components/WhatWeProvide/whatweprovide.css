@@ -1,0 +1,24 @@
+.what-we-provide-container ul {
+    text-decoration: none;
+
+}
+.what-we-provide-container li {
+    list-style: none;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+li:before {
+    /* For a round bullet */
+    content:'\2022';
+    /* For a square bullet */
+    /*content:'\25A0';*/
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -30px;
+    top: -23px;
+    color: var(--etorange);
+    font-size: 50px;
+}

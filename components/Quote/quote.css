@@ -1,0 +1,26 @@
+.quote-container {
+    min-height: 250px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-bg-image{
+    position: absolute;
+    background: var(--etblack) url("/static/img/sandro-schuh-80814-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    z-index: -1;
+
+}
+.quote-title {
+
+
+}

@@ -1,5 +1,7 @@
+import './whoweare.css';
+
 const WhoWeAre = (props) => (
-    <div>
+    <section className='who-we-are-container grid'>
         <h1>Who</h1>
         <h1>we are</h1>
         <p>Enviroturf was established in
@@ -9,8 +11,9 @@ const WhoWeAre = (props) => (
             aesthetically pleasing while
             maintaining a commitment to
             supplying the safest surface
-            possible.</p>
-    </div>
+            possible.
+        </p>
+    </section>
 )
 
 export default  WhoWeAre

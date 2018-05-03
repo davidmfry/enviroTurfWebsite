@@ -1,7 +1,8 @@
 import './infosection.css';
 
 const IntroSection = (props) => (
-    <div className='top-container'>
+    <div className='top-container grid'>
+        <div className="bg-image"></div>
         <div className="title-group">
             <h1 className="title-1">Enviro</h1>
             <h1 className="title-2">Turf</h1>
