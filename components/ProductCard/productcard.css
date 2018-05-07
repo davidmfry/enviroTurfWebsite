@@ -1,0 +1,9 @@
+.product-card-container {
+    background: var(--etblack);
+    color: var(--etwhite);
+    text-align: left;
+}
+
+.product-card-container p {
+    padding: 10px;
+}

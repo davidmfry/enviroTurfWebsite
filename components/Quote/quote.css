@@ -11,7 +11,7 @@
 
 .quote-bg-image{
     position: absolute;
-    background: var(--etblack) url("/static/img/sandro-schuh-80814-unsplash.jpg");
+    background: var(--etblack) url("/static/img/turf-photo.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,4 +23,18 @@
 .quote-title {
 
 
+}
+
+@media (min-width: 1200px)
+{
+    .quote-container h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1500px)
+{
+    .quote-container h2 {
+        font-size: 2.6rem;
+    }
 }

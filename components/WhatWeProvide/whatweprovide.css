@@ -1,5 +1,17 @@
+.what-we-provide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55rem;
+}
+
+.what-we-provide-container h1 {
+    font-size: 5rem;
+}
+
 .what-we-provide-container ul {
     text-decoration: none;
+
 
 }
 .what-we-provide-container li {
@@ -7,6 +19,8 @@
     text-align: left;
     padding-bottom: 15px;
 }
+
+
 
 li:before {
     /* For a round bullet */
@@ -21,4 +35,41 @@ li:before {
     top: -23px;
     color: var(--etorange);
     font-size: 50px;
+}
+
+@media (min-width: 700px)
+{
+    .what-we-wrapper {
+        display: grid;
+        grid-template-areas:
+                'what-we-provide-title what-we-provide-info '
+    }
+
+    .what-we-provide-title {
+        grid-area: what-we-provide-title;
+        padding: 0 30px;
+    }
+
+    .what-we-provide-info {
+        grid-area: what-we-provide-info;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1500px) {
+    .what-we-wrapper {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            '. what-we-provide-title . what-we-provide-info what-we-provide-info . '
+    }
+
+    .what-we-provide-container h1 {
+        font-size: 7rem;
+    }
+
+    .what-we-provide-container li {
+        font-size: 1.3rem;
+    }
+
+
 }

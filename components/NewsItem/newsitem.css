@@ -1,0 +1,28 @@
+.news-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--etwhite);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+
+}
+
+.new-item-bottom-bar {
+    background-color: var(--etblack);
+    opacity: 0.8;
+    color: var(--etwhite)
+}
+
+.new-item-bottom-bar h4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 0 10px 0 10px;
+}
+
+.new-item-bottom-bar p {
+    font-size: .6rem;
+    text-align: left;
+    padding: 0 10px 0 10px;
+}

@@ -1,7 +1,19 @@
+import './productcard.css';
 const ProductCard = (props) => (
-    <div>
-        <img src={props.image} alt=""/>
-        <p><strong>{props.title}</strong>{props.description}</p>
+    <div className="product-card-container">
+        {/*<img src={props.image} alt=""/>*/}
+        <p><strong>{props.title}</strong> {props.description}</p>
+
+        <style jsx>
+            {
+                `
+                    .product-card-container strong {
+                        color: var(--${props.color});
+                    }
+
+                `
+            }
+        </style>
     </div>
 )
 

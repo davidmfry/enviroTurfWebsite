@@ -6,7 +6,7 @@
 
 .big-quote-image-bg{
     position: absolute;
-    background: var(--etblack) url("/static/img/sandro-schuh-80814-unsplash.jpg");
+    background: var(--etblack) url("/static/img/turf-photo.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +17,7 @@
 }
 
 .big-quote h2 {
+    font-family: 'Rubik', sans-serif;
     font-size: 1.5rem;
     text-align: left;
     padding-left: 20px;
@@ -42,10 +43,42 @@
     border-color: var(--etwhite);
     margin-left: 20px;
     margin-right: 20px;
-
-
 }
 
+@media (min-width: 700px) {
+    .big-quote h2 {
+        font-size: 2.2rem;
+
+    }
+
+    .quote-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+
+    }
+}
+
+@media (min-width: 1000px) {
+    .big-quote h2 {
+        font-size: 2.8rem;
+
+    }
+}
+
+@media (min-width: 1500px) {
+    .big-quote h2 {
+        font-size: 3.3rem;
+
+    }
+}
+
+@media (min-width: 2000px) {
+    .big-quote h2 {
+        font-size: 6rem;
+
+    }
+}
 
 
 

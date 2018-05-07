@@ -1,0 +1,13 @@
+@media (min-width: 700px) {
+    .video-section-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .video-section-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,22 @@
+.latest-news-container {
+    padding-top: 10rem;
+}
+
+.latest-news-container h1 {
+    padding-bottom: 20px;
+}
+
+
+@media (min-width: 700px) {
+    .latest-news-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .latest-news-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -1,5 +1,65 @@
+.who-we-are-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+
+.who-we-are-info {
+    padding: 0 20px;
+}
+
 .who-we-are-container h1 {
     font-family: 'Rubik', sans-serif;
     color: var(--etgreen);
-    font-size: 3.5rem;
+    font-size: 5rem;
+}
+
+
+@media (min-width: 700px)
+{
+    .who-we-are-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-areas:
+        'who-we-title who-we-info'
+    }
+
+    .who-we-are-title {
+        grid-area: who-we-title;
+        padding: 0 30px;
+    }
+
+    .who-we-are-info {
+        grid-area: who-we-info;
+        text-align: left;
+    }
+
+    .who-we-are-title h1{
+        font-size: 5rem;
+    }
+
+    .who-we-are-info p {
+        font-size: 1.3rem;
+
+    }
+}
+
+@media (min-width: 1000px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+                'who-we-title who-we-title who-we-info  who-we-info'
+    }
+
+    .who-we-are-info p {
+        font-size: 1.3rem;
+
+    }
 }
