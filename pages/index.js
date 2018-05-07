@@ -31,8 +31,8 @@ const Index = (props) => (
         <div className="color-section"></div>
         <VideoSection/>
         <LatestNews/>
-        {/*<Projects/>*/}
-        {/*<Products/>*/}
+        <Projects/>
+        <Products/>
         {/*<Map/>*/}
         {/*<ContactUs/>*/}
         {/*<Footer/>*/}

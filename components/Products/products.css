@@ -1,12 +1,39 @@
 .product-container {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*padding: 10rem;*/
+   margin-top: 10rem;
+}
+
+.product-container h1 {
+    padding-bottom: 5rem;
 }
 
 .product-image {
     display: flex;
     justify-content: flex-end;
+}
+
+@media (min-width: 700px) {
+    .product-wrapper {
+        margin: 0 5rem;
+
+    }
+
+
+}
+
+@media (min-width: 1500px) {
+    .product-wrapper {
+        margin: 0 12rem;
+
+    }
+
+
+}
+
+@media (min-width: 1800px) {
+    .product-wrapper {
+        margin: 0 22rem;
+
+    }
+
+
 }

@@ -45,8 +45,7 @@ const ProjectCard = (props) => (
                         background-repeat: no-repeat;
                         background-size: cover;
                         background-color: var(--etblack);
-                        width: 400px;
-                        height: 450px;
+
 
                     }
 

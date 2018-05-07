@@ -5,7 +5,8 @@
     /*align-items: center;*/
     color: var(--etwhite);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 400px;
+    height: 450px;
+
     text-align: center;
     margin: 10px;
     border: solid 1px;
