@@ -22,7 +22,7 @@
 
 
 
-li:before {
+.what-we-provide-info li:before {
     /* For a round bullet */
     content:'\2022';
     /* For a square bullet */

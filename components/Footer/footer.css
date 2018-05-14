@@ -1,0 +1,133 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--etblack);
+    margin-top: 8rem;
+}
+
+.footer-logo {
+    width: 240px;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-social-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0 3px;
+
+}
+
+.footer-social-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-address {
+    padding: 0 20px;
+    color: var(--etwhite);
+}
+
+.footer-address h5 {
+    font-size: 2rem;
+    color: var(--etwhite);
+}
+
+.footer-links {
+    padding-bottom: 2rem;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 5px  10px;
+    color: var(--etwhite);
+}
+
+.footer-links h5 {
+    font-size: 2rem;
+    margin-bottom:  1rem;
+    color: var(--etwhite);
+}
+
+.footer-sport-icons {
+    margin-top: 2rem;
+}
+
+.copyright {
+    color: var(--etwhite);
+}
+
+
+@media (min-width: 1000px)
+{
+    footer {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            '. . social'
+            'logo address links'
+            '. copyright .';
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-area: logo;
+        padding-left: 4rem;
+        width: 320px;
+    }
+
+    .footer-social {
+        grid-area: social;
+        padding-top: 3rem;
+    }
+
+    .footer-address {
+        grid-area: address;
+        text-align: left;
+
+    }
+
+    .footer-address p {
+
+        font-size: 1.8rem;
+    }
+
+
+    .footer-links {
+        grid-area: links;
+        text-align: left;
+    }
+
+    .copyright{
+        grid-area: copyright;
+    }
+
+    .footer-sport-icons {
+        grid-area: sport-icons;
+    }
+
+
+
+}

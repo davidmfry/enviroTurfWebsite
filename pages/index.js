@@ -15,8 +15,8 @@ import LatestNews from "../components/LatestNews/LatestNews";
 import Projects from "../components/Projects/Projects";
 import Products from "../components/Products/Products";
 import Map from "../components/Map/Map";
-import ContactUs from "../components/ContactUs";
-import Footer from "../components/Footer";
+import ContactUs from "../components/ContactUs/ContactUs";
+import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
 
 const Index = (props) => (
@@ -33,8 +33,7 @@ const Index = (props) => (
         <LatestNews/>
         <Projects/>
         <Products/>
-        {/*<Map/>*/}
-        {/*<ContactUs/>*/}
+        <ContactUs/>
         {/*<Footer/>*/}
     </Layout>
 )

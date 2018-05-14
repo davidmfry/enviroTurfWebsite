@@ -1,5 +1,8 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import './layout.css';
+
+import Footer from '../components/Footer/Footer';
 
 const Layout = (props) => (
     <div>
@@ -11,24 +14,39 @@ const Layout = (props) => (
             <link href="https://fonts.googleapis.com/css?family=Rubik:400,700,900" rel="stylesheet"/>
             <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"/>
             <link rel="stylesheet" href="/_next/static/style.css" />
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous"/>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossOrigin="anonymous"/>
         </Head>
         <div className='container'>
             <div className="nav">
-                <label for="toggle">&#9776;</label>
-                <img className="nav-logo" src="/static/img/Logo.png" alt=""/>
-                <input type="checkbox" id="toggle"/>
-                <div className="menu">
-                    <a href="#">HOME</a>
-                    <a href="#">WHO WE ARE</a>
-                    <a href="#">PRODUCTS</a>
-                    <a href="#">PROJECTS</a>
-                    <a href="#">BLOG</a>
-                    <a href="#">CONTACT US</a>
-                </div>
+                <label htmlFor="show-menu" className="show-menu">&#9776;</label>
+                <input type="checkbox" id="show-menu" role="button"/>
+                <img className="nav-logo" src="/static/img/ets-logo.png" alt="" width="160"/>
+                <ul id="menu">
+                    <li><Link href="/">Home</Link></li>
+                    <li>
+                        <a href="">About</a>
+                        <ul className="hidden">
+                            <li><a href="#">Meet Our Team</a></li>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Mission Statement</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Products</a></li>
+                    <li>
+                        <a href="">Project Gallery</a>
+                        <ul className="hidden">
+                            <li><Link href="/project-gallery/baseball-softball">Baseball/Softball</Link></li>
+                            <li><Link href="/project-gallery/football-soccer">Football/Soccer</Link></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
             </div>
+
             {props.children}
         </div>
+        <Footer/>
     </div>
 )
 

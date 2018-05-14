@@ -1,0 +1,98 @@
+.land
+{
+    fill: #83BD7D;
+    fill-opacity: 1;
+    stroke:white;
+    stroke-opacity: 1;
+    stroke-width:0.5;
+}
+#US-TX {
+    fill: #0D8703;
+}
+#US-TX:hover {
+    fill: #20242C;
+}
+
+#US-NE {
+    fill: #0D8703;
+}
+#US-NE:hover {
+    fill: #20242C;
+}
+
+#US-LA {
+    fill: #0D8703;
+}
+#US-LA:hover {
+    fill: #20242C;
+}
+
+#US-AL {
+    fill: #0D8703;
+}
+#US-AL:hover {
+    fill: #20242C;
+}
+
+#US-AR {
+    fill: #0D8703;
+}
+#US-AR:hover {
+    fill: #20242C;
+}
+
+#US-KY {
+    fill: #0D8703;
+}
+#US-KY:hover {
+    fill: #20242C;
+}
+
+#US-KS {
+    fill: #0D8703;
+}
+#US-KS:hover {
+    fill: #20242C;
+}
+
+#US-MS {
+    fill: #0D8703;
+}
+#US-MS:hover {
+    fill: #20242C;
+}
+
+#US-MO {
+    fill: #0D8703;
+}
+#US-MO:hover {
+    fill: #20242C;
+}
+
+#US-IL {
+    fill: #0D8703;
+}
+#US-IL:hover {
+    fill: #20242C;
+}
+
+#US-NC {
+    fill: #0D8703;
+}
+#US-NC:hover {
+    fill: #20242C;
+}
+
+#US-TN {
+    fill: #0D8703;
+}
+#US-TN:hover {
+    fill: #20242C;
+}
+
+#US-VA {
+    fill: #0D8703;
+}
+#US-VA:hover {
+    fill: #20242C;
+}
