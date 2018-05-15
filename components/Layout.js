@@ -22,7 +22,7 @@ const Layout = (props) => (
                 <input type="checkbox" id="show-menu" role="button"/>
                 <img className="nav-logo" src="/static/img/ets-logo.png" alt="" width="160"/>
                 <ul id="menu">
-                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/"><a>HOME</a></Link></li>
                     <li>
                         <a href="">About</a>
                         <ul className="hidden">
@@ -36,8 +36,8 @@ const Layout = (props) => (
                     <li>
                         <a href="">Project Gallery</a>
                         <ul className="hidden">
-                            <li><Link href="/project-gallery/baseball-softball">Baseball/Softball</Link></li>
-                            <li><Link href="/project-gallery/football-soccer">Football/Soccer</Link></li>
+                            <li><Link href="/project-gallery/baseball-softball"><a>Baseball/Softball</a></Link></li>
+                            <li><Link href="/project-gallery/football-soccer"><a>Football/Soccer</a></Link></li>
                         </ul>
                     </li>
                     <li><a href="">Contact Us</a></li>

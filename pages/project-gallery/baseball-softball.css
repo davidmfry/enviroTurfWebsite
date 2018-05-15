@@ -1,4 +1,8 @@
 .baseball-softball-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -6,6 +10,10 @@
 .baseball-softball-container h1 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.baseball-softball-image-container {
+    width: 100%;
 }
 
 .baseball-softball-image {
@@ -51,6 +59,10 @@
     .baseball-softball-image-box-container {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
+    }
+
+    .baseball-softball-image-container {
+        width: 70%;
     }
 }
 

@@ -1,4 +1,8 @@
 .us-state-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -8,6 +12,11 @@
     margin-bottom: 2rem;
 }
 
+.us-state-image-container {
+    width: 100%;
+
+}
+
 .us-state-image {
 }
 
@@ -15,6 +24,7 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
 
 }
 
@@ -42,6 +52,9 @@
 {
     .image-box-container {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .us-state-image-container {
+        width: 70%;
 
     }
 }
@@ -52,5 +65,11 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
     }
+
+    .us-state-image-container {
+        width: 70%;
+
+    }
+
 }
 

@@ -12,12 +12,17 @@ class BaseBallSoftBall extends React.Component
 
     componentDidMount ()
     {
-        this.setState({focusedImage: '/static/img/briarwood33.jpg'})
+        this.setState({focusedImage: "/static/img/Baseball-Softball/Corinth-1.jpg"})
     }
 
     renderImages = (stateName) =>
     {
-        const imageList = ['/static/img/Slide01.jpg', '/static/img/Slide02.jpg', '/static/img/Slide03.jpg', '/static/img/Slide04.jpg', '/static/img/Slide05.jpg', '/static/img/Slide06.jpg'];
+        const imageList = ["/static/img/Baseball-Softball/Corinth-1.jpg",
+            "/static/img/Baseball-Softball/Corinth-2.jpg",
+            "/static/img/Baseball-Softball/Corinth-3.jpg",
+            "/static/img/Baseball-Softball/Ole-Miss-1.png",
+            "/static/img/Baseball-Softball/Sabetha-1.jpg",
+            "/static/img/Baseball-Softball/Sabetha-2.jpg"];
         return (
             imageList.map( (image) => (
                 <div className="baseball-softball-image-box">
@@ -33,8 +38,11 @@ class BaseBallSoftBall extends React.Component
             <Layout>
             <div className="baseball-softball-container">
                 <h1>Baseball and Softball Completed Projects</h1>
-                <div className="baseball-softball-bg-image">
-                </div>
+                    <div className='baseball-softball-image-container'>
+                        <div className="baseball-softball-bg-image">
+                        </div>
+                    </div>
+
 
                 <div className="baseball-softball-image-box-container">
                     {this.renderImages()}
