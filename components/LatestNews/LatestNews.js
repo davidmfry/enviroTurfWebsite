@@ -1,22 +1,63 @@
 import './latestnews.css';
 import NewsItem from "../NewsItem/NewsItem";
 
-const LatestNews = (props) => (
-    <div className="latest-news-container">
-        <h1>Latest News</h1>
-        <div className="latest-news-wrapper">
-            <NewsItem image="https://source.unsplash.com/random/300x200" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>
-            <NewsItem image="https://source.unsplash.com/random/300x201" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>
-            <NewsItem image="https://source.unsplash.com/random/300x202" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>
-            <NewsItem image="https://source.unsplash.com/random/300x203" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>
+import firebase from "../../config/firebase";
 
-            <NewsItem image="https://source.unsplash.com/random/300x204" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>
+class LatestNews extends React.Component
+{
+    state = {
+        items: []
+    }
 
-            <NewsItem image="https://source.unsplash.com/random/300x205" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>
+    componentDidMount()
+    {
+        const itemsRef = firebase.database().ref('latestnews');
+        itemsRef.on('value', (snapshot) => {
+            let items = snapshot.val();
+            let newState = [];
+            for (let item in items)
+            {
+                newState.push({
+                    id: item,
+                    headline: items[item].headline,
+                    headline2: items[item].headline2,
+                    headerImage: items[item].headerImage,
+                    content: items[item].content,
+                    description: items[item].description
+                })
 
-    </div>
+            }
+            this.setState({
+                items:newState
+            })
+        })
+    }
 
-    </div>
-)
+    render()
+    {
+        console.log(this.state.items);
+
+        return (
+            <div className="latest-news-container">
+                <h1>Latest News</h1>
+                <div className="latest-news-wrapper">
+                    {this.state.items.map( (item) => (
+                        <NewsItem key={item.id} image={item.headerImage} headline={item.headline} description={item.description}/>
+                    ))}
+                    {/*<NewsItem image="https://source.unsplash.com/random/300x200" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
+                    {/*<NewsItem image="https://source.unsplash.com/random/300x201" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
+                    {/*<NewsItem image="https://source.unsplash.com/random/300x202" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
+                    {/*<NewsItem image="https://source.unsplash.com/random/300x203" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
+
+                    {/*<NewsItem image="https://source.unsplash.com/random/300x204" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
+
+                    {/*<NewsItem image="https://source.unsplash.com/random/300x205" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
+
+                </div>
+
+            </div>
+        )
+    }
+}
 
 export default LatestNews
