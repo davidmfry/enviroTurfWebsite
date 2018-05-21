@@ -8,13 +8,20 @@
 
 .product-image {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 @media (min-width: 700px) {
     .product-wrapper {
         margin: 0 5rem;
 
+    }
+
+    .product-grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 1rem;
     }
 
 
@@ -24,6 +31,12 @@
     .product-wrapper {
         margin: 0 12rem;
 
+    }
+
+    .product-grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
     }
 
 

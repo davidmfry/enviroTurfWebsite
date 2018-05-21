@@ -1,3 +1,5 @@
+import guid from '../../utils/guid';
+
 import './usstate.css';
 
 class UsState extends React.Component
@@ -9,6 +11,8 @@ class UsState extends React.Component
             focusedImage: ''
         }
     }
+
+
 
     componentDidMount () {
         switch (this.props.usState) {
@@ -78,7 +82,7 @@ class UsState extends React.Component
                     "/static/img/states/Alabama/UWA-012.JPG"];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""
@@ -134,7 +138,7 @@ class UsState extends React.Component
                     "/static/img/states/Arkansas/Vilonia-5.JPG"];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""
@@ -152,7 +156,7 @@ class UsState extends React.Component
                     "/static/img/states/Illinois/Lindenwood-6.jpg"];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""
@@ -167,7 +171,7 @@ class UsState extends React.Component
                     "/static/img/states/Kansas/Bethany-3.JPG"];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""
@@ -180,7 +184,7 @@ class UsState extends React.Component
                 imageList=["/static/img/states/Kentucky/Cambellsville-1.jpg"];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""
@@ -193,7 +197,7 @@ class UsState extends React.Component
                 imageList=[""];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""
@@ -218,7 +222,7 @@ class UsState extends React.Component
                     "/static/img/states/Mississippi/Picayune-1.jpg"];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""
@@ -231,7 +235,7 @@ class UsState extends React.Component
                 imageList=["/static/img/states/Missouri/SW-Baptist-1.jpg"];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""
@@ -246,7 +250,7 @@ class UsState extends React.Component
                     "/static/img/states/North Carolina/Weddington-3.JPG"];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""
@@ -268,7 +272,7 @@ class UsState extends React.Component
                     "/static/img/states/Tennessee/UofM-9.JPG"];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""
@@ -285,7 +289,7 @@ class UsState extends React.Component
                     "/static/img/states/Texas/Westfield-2.jpg"];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""
@@ -299,7 +303,7 @@ class UsState extends React.Component
                     "/static/img/states/Virginia/TC-Williams-2.jpg"];
                 return (
                     imageList.map( (image) => (
-                        <div className="image-box">
+                        <div key={guid()} className="image-box">
                             <img
                                 onClick={() => this.setState({focusedImage: image})}
                                 src={image} alt=""

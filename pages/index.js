@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import ScrollableAnchor from 'react-scrollable-anchor';
+
 import Layout from '../components/Layout';
 
 import './index.css';
@@ -22,16 +24,24 @@ import NavBar from "../components/NavBar/NavBar";
 const Index = (props) => (
     <Layout>
         <IntroSection/>
-        <WhoWeAre/>
+        <ScrollableAnchor id={'who-we-are'}>
+            <WhoWeAre/>
+        </ScrollableAnchor>
         <BigQuote/>
         <div className="color-section"></div>
         <WhatWeProvide/>
-        <MeetOurTeam/>
+        <ScrollableAnchor id={'meet-our-team'}>
+            <MeetOurTeam/>
+        </ScrollableAnchor>
         <Quote/>
         <div className="color-section"></div>
-        <VideoSection/>
+        <ScrollableAnchor id={'testimonials'}>
+                <VideoSection/>
+        </ScrollableAnchor>
         <LatestNews/>
-        <Projects/>
+        {/*<Projects/>*/}
+        <Quote/>
+        <div className="color-section"></div>
         <Products/>
         <ContactUs/>
         {/*<Footer/>*/}

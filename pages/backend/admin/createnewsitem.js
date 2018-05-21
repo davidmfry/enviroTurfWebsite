@@ -89,7 +89,7 @@ class CreateNewsItem extends React.Component
                                 headline2: this.state.headline2,
                                 headerImage: this.state.headerImage,
                                 content: this.state.content,
-                                description: this.state.description,
+                                description: `${this.state.description}`,
                             })
                     }}>Save News Item</button>
                 </form>
