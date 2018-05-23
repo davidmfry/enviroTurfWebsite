@@ -6,7 +6,13 @@ class ImageSlider extends React.Component
 {
     state = {
         slideCount: 0,
-        imageList: ['/static/img/topBannerSlides/briawood.JPG', "/static/img/topBannerSlides/Jackson-MS.jpg", "/static/img/topBannerSlides/MRA.jpg"],
+        imageList: [
+            '/static/img/topBannerSlides/briawood.JPG',
+            "/static/img/topBannerSlides/Jackson-MS.jpg",
+            "/static/img/topBannerSlides/MRA.jpg",
+            "/static/img/topBannerSlides/Mississippi-College.jpg",
+            "/static/img/topBannerSlides/spring_isd.jpg"
+        ],
         time: 3000
     };
 

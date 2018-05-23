@@ -17,12 +17,12 @@ class BaseBallSoftBall extends React.Component
 
     renderImages = (stateName) =>
     {
-        const imageList = ["/static/img/Baseball-Softball/Corinth-1.jpg",
-            "/static/img/Baseball-Softball/Corinth-2.jpg",
-            "/static/img/Baseball-Softball/Corinth-3.jpg",
-            "/static/img/Baseball-Softball/Ole-Miss-1.png",
-            "/static/img/Baseball-Softball/Sabetha-1.jpg",
-            "/static/img/Baseball-Softball/Sabetha-2.jpg"];
+        const imageList = ["http://res.cloudinary.com/enviroturf/image/upload/v1527009300/Corinth-1.jpg",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1527009301/Corinth-2.jpg",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1527009300/Corinth-3.jpg",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1527009301/Ole-Miss-1.png",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1527009301/Sabetha-2.jpg",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1527009300/Sabetha-1.jpg"];
         return (
             imageList.map( (image) => (
                 <div className="baseball-softball-image-box">

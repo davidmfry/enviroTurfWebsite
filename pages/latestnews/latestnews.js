@@ -1,39 +1,47 @@
 import Layout from '../../components/Layout'
 
 import './latestnewssinglepage.css';
+import firebase from '../../config/firebase';
+
 
 class LatestNewsSinglePage extends React.Component
 {
     constructor (props)
     {
         super(props)
-        this.state = {
-            featuredImage: "/static/img/grass.jpeg"
-        }
+        this.state = {}
+
+        this.formatContent = this.formatContent.bind(this);
+    }
+
+    componentDidMount()
+    {
+        console.log(this.props.newsId);
+        const itemsRef = firebase.database().ref(`latestnews/${this.props.newsId}`);
+        itemsRef.on('value', (snapshot) => {
+            let item = snapshot.val();
+            this.setState({...item})
+        });
+
+    }
+
+    formatContent = (content) => {
+
     }
 
     render()
     {
         return (
             <div className="news-page-container">
+                <h1>{this.state.headline}</h1>
                 <div className="news-page-wrapper">
+
                     <div className="news-page-img">
                     </div>
                     <p className='news-caption'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae dolore eveniet fuga fugiat, nisi officia perspiciatis porro repudiandae temporibus.</p>
 
-                    <h1 className="news-headline">News Headline</h1>
-                    <p className="news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi commodi consectetur culpa dolorem doloremque dolorum et fuga hic libero, mollitia nesciunt nobis obcaecati optio quaerat qui quibusdam quis quisquam saepe totam ut veniam, vero voluptatum. Ad adipisci amet assumenda at atque aut error minus numquam reprehenderit? Distinctio, omnis, tenetur!</p>
-                    <p className="news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi consectetur consequatur magni mollitia, neque nesciunt placeat quas, reiciendis rem unde vero voluptatibus. A alias aliquid animi aspernatur atque cupiditate dicta distinctio doloribus eligendi fugit, id inventore ipsa magni neque provident ratione reiciendis rem sit suscipit voluptate. Corporis dignissimos, provident!</p>
-
-                    <h1 className="news-headline">
-                        This is something important rember!
-                    </h1>
-
-                    <p className="news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi commodi consectetur culpa dolorem doloremque dolorum et fuga hic libero, mollitia nesciunt nobis obcaecati optio quaerat qui quibusdam quis quisquam saepe totam ut veniam, vero voluptatum. Ad adipisci amet assumenda at atque aut error minus numquam reprehenderit? Distinctio, omnis, tenetur!</p>
-                    <p className="news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi consectetur consequatur magni mollitia, neque nesciunt placeat quas, reiciendis rem unde vero voluptatibus. A alias aliquid animi aspernatur atque cupiditate dicta distinctio doloribus eligendi fugit, id inventore ipsa magni neque provident ratione reiciendis rem sit suscipit voluptate. Corporis dignissimos, provident!</p>
-
-                    <p className="news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi commodi consectetur culpa dolorem doloremque dolorum et fuga hic libero, mollitia nesciunt nobis obcaecati optio quaerat qui quibusdam quis quisquam saepe totam ut veniam, vero voluptatum. Ad adipisci amet assumenda at atque aut error minus numquam reprehenderit? Distinctio, omnis, tenetur!</p>
-                    <p className="news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi consectetur consequatur magni mollitia, neque nesciunt placeat quas, reiciendis rem unde vero voluptatibus. A alias aliquid animi aspernatur atque cupiditate dicta distinctio doloribus eligendi fugit, id inventore ipsa magni neque provident ratione reiciendis rem sit suscipit voluptate. Corporis dignissimos, provident!</p>
+                    <h1 className="news-headline">{this.state.headline}</h1>
+                    <p>{this.state.content}</p>
                 </div>
 
 
@@ -42,7 +50,7 @@ class LatestNewsSinglePage extends React.Component
                         `
                             .news-page-img {
 
-                            background: url("${this.state.featuredImage}");
+                            background: url("${this.state.headerImage}");
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
@@ -61,6 +69,6 @@ class LatestNewsSinglePage extends React.Component
 
 export default (props) => (
     <Layout>
-        <LatestNewsSinglePage/>
+        <LatestNewsSinglePage newsId={props.url.query.id} />
     </Layout>
 )

@@ -5,6 +5,9 @@
 .latest-news-container h1 {
     padding-bottom: 20px;
 }
+.latest-news-container a {
+    text-decoration: none;
+}
 
 
 @media (min-width: 700px) {

@@ -1,5 +1,9 @@
+
+
 import './contactus.css'
 import firebase from '../../config/firebase';
+
+
 
 class ContactUs extends React.Component
 {
@@ -15,7 +19,9 @@ class ContactUs extends React.Component
     {
         // getting a ref to a firebase database called message
         const itemsRef = firebase.database().ref('messages');
-        itemsRef.push(values)
+        itemsRef.push(values);
+
+        this.sendEmail(values);
 
         this.setState({
             firstName: '',
@@ -26,12 +32,14 @@ class ContactUs extends React.Component
         });
     }
 
+
     render ()
     {
         return (
             <div className="contact-us">
                 <h1 className="contact-us-title">Contact us</h1>
-                <form className="contact-us-form">
+                <form className="contact-us-form" action="https://formspree.io/david@somekindofidea.com"
+                      method="POST">
                     <div>
                         <label>* First Name</label>
                         <input
@@ -64,7 +72,7 @@ class ContactUs extends React.Component
                         <label>Phone Number</label>
                         <input
                             type="text"
-                            name='firstname'
+                            name='phone'
                             value={this.state.phone}
                             onChange={e => this.setState({phone: e.target.value})}
                         />
@@ -76,16 +84,18 @@ class ContactUs extends React.Component
                             cols="50"
                             value={this.state.message}
                             onChange={e => this.setState({message: e.target.value})}
+                            name="message"
                         ></textarea>
                     </div>
+                    <button type="submit" className="btn" onClick={() => {
+                        this.handleSubmit({firstName: this.state.firstName,
+                            lastName: this.state.lastName,
+                            email: this.state.email,
+                            phone: this.state.phone,
+                            message: this.state.message})
+                    }}>Send</button>
                 </form>
-                <button className="btn" onClick={() => {
-                    this.handleSubmit({firstName: this.state.firstName,
-                        lastName: this.state.lastName,
-                        email: this.state.email,
-                        phone: this.state.phone,
-                        message: this.state.message})
-                }}>Send</button>
+
             </div>
         )
     }

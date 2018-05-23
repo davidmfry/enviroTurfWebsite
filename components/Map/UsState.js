@@ -62,9 +62,8 @@ class UsState extends React.Component
         switch (stateName)
         {
             case "Alabama":
-                imageList=["/static/img/states/Alabama/aca2-03.JPG",
-                    "/static/img/states/Alabama/aca2-004.JPG",
-                    "/static/img/states/Alabama/aca2-007.JPG",
+                imageList=["/static/img/states/Alabama/aca2-004.jpg",
+                    "/static/img/states/Alabama/aca2-007.jpg",
                     "/static/img/states/Alabama/aca2-ari.jpg",
                     "/static/img/states/Alabama/briarwood-1.JPG",
                     "/static/img/states/Alabama/briarwood-2.JPG",
@@ -73,7 +72,6 @@ class UsState extends React.Component
                     "/static/img/states/Alabama/Faulkner-1.jpg",
                     "/static/img/states/Alabama/Faulkner-2.JPG",
                     "/static/img/states/Alabama/Faulkner-3.JPG",
-                    "/static/img/states/Alabama/Faulkner.jpg",
                     "/static/img/states/Alabama/Miles-1.jpg",
                     "/static/img/states/Alabama/Miles-2.jpg",
                     "/static/img/states/Alabama/Miles-3.jpg",

@@ -1,6 +1,7 @@
+import Link from 'next/link';
+
 import './latestnews.css';
 import NewsItem from "../NewsItem/NewsItem";
-
 import firebase from "../../config/firebase";
 
 class LatestNews extends React.Component
@@ -42,17 +43,8 @@ class LatestNews extends React.Component
                 <h1>Latest News</h1>
                 <div className="latest-news-wrapper">
                     {this.state.items.map( (item) => (
-                        <NewsItem key={item.id} id={item.id} image={item.headerImage} headline={item.headline} description={item.description}/>
+                        <Link as={`/latestnews/${item.id}`} href={`/latestnews/latestnews?id=${item.id}`}><a><NewsItem key={item.id} id={item.id} image={item.headerImage} headline={item.headline} description={item.description}/></a></Link>
                     ))}
-                    {/*<NewsItem image="https://source.unsplash.com/random/300x200" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
-                    {/*<NewsItem image="https://source.unsplash.com/random/300x201" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
-                    {/*<NewsItem image="https://source.unsplash.com/random/300x202" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
-                    {/*<NewsItem image="https://source.unsplash.com/random/300x203" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
-
-                    {/*<NewsItem image="https://source.unsplash.com/random/300x204" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
-
-                    {/*<NewsItem image="https://source.unsplash.com/random/300x205" headline="Headline for the latest news here" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet quam in risus tempor elementum. Donec porttitor, lectus quis placerat placerat, tellus magna convallis turpis, sed sagittis urna elit at sapien."/>*/}
-
                 </div>
 
             </div>
