@@ -1,5 +1,3 @@
-import { Carousel } from 'react-responsive-carousel'
-
 import './introsection.css';
 import ImageSlider from '../../components/ImageSlider/ImageSlider';
 
