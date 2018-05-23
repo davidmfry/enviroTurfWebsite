@@ -33,14 +33,14 @@ const Index = (props) => (
         <ScrollableAnchor id={'meet-our-team'}>
             <MeetOurTeam/>
         </ScrollableAnchor>
-        <Quote/>
+        {/*<Quote/>*/}
         <div className="color-section"></div>
-        <ScrollableAnchor id={'testimonials'}>
-                <VideoSection/>
-        </ScrollableAnchor>
+        {/*<ScrollableAnchor id={'testimonials'}>*/}
+                {/*<VideoSection/>*/}
+        {/*</ScrollableAnchor>*/}
         <LatestNews/>
         {/*<Projects/>*/}
-        <Quote/>
+        {/*<Quote/>*/}
         <div className="color-section"></div>
         <Products/>
         <ContactUs/>

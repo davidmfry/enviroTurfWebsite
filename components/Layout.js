@@ -29,7 +29,7 @@ const Layout = (props) => (
                     <ul className="hidden">
                         <li><a href="#meet-our-team">Meet Our Team</a></li>
                         <li><a href="#who-we-are">Who We Are</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
+                        {/*<li><a href="#testimonials">Testimonials</a></li>*/}
                         <li><Link href="/missionstatment"><a>Mission Statement</a></Link></li>
                     </ul>
                 </li>

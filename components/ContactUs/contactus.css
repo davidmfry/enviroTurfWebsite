@@ -62,5 +62,6 @@ input[type="text"]
     .btn {
         padding-left: 3rem;
         padding-right: 3rem;
+        grid-column-start: 2;
     }
 }
