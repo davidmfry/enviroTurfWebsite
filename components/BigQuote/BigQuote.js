@@ -11,7 +11,7 @@ const BigQuote = (props) => (
         </h2>
         <div className="byline">
             <div className='quote-image'></div>
-            <h4>Hal Mummey</h4>
+            <h4>Hal Mumme</h4>
         </div>
 
     </div>
