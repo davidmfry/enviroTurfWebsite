@@ -13,7 +13,6 @@ const Layout = (props) => (
             {/*<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"/>*/}
             <link href="https://fonts.googleapis.com/css?family=Rubik:400,700,900" rel="stylesheet"/>
             <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"/>
-            <link rel="stylesheet" ref="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"/>
             <link rel="stylesheet" href="/_next/static/style.css" />
 
 
@@ -27,13 +26,13 @@ const Layout = (props) => (
                 <li>
                     <a href="">About</a>
                     <ul className="hidden">
-                        <li><a href="#meet-our-team">Meet Our Team</a></li>
-                        <li><a href="#who-we-are">Who We Are</a></li>
+                        <li><a href="/meetourteam">Meet Our Team</a></li>
+                        <li><a href="whoweare">Who We Are</a></li>
                         {/*<li><a href="#testimonials">Testimonials</a></li>*/}
                         <li><Link href="/missionstatment"><a>Mission Statement</a></Link></li>
                     </ul>
                 </li>
-                <li><a href="">Products</a></li>
+                <li><Link href="/products"><a href="">Products</a></Link></li>
                 <li>
                     <a href="">Project Gallery</a>
                     <ul className="hidden">

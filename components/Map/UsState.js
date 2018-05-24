@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import guid from '../../utils/guid';
 
 import './usstate.css';
@@ -62,7 +63,8 @@ class UsState extends React.Component
         switch (stateName)
         {
             case "Alabama":
-                imageList=["/static/img/states/Alabama/aca2-004.jpg",
+                imageList=[
+                    "/static/img/states/Alabama/aca2-004.jpg",
                     "/static/img/states/Alabama/aca2-007.jpg",
                     "/static/img/states/Alabama/aca2-ari.jpg",
                     "/static/img/states/Alabama/briarwood-1.JPG",
@@ -327,6 +329,8 @@ class UsState extends React.Component
                 <div className="image-box-container">
                     {this.renderStateImages(this.props.usState)}
                 </div>
+
+                <h3><Link href="/project-gallery/football-soccer"><a>Back to map</a></Link></h3>
 
 
                 <style jsx>

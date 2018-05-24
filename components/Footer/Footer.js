@@ -30,6 +30,9 @@ const Footer = (props) => (
                 Flowood, MS 39232 <br/>
                 Email: info@enviroturf.us<br/>
                 Phone: 601.644.1010
+                Cell: 601.940.3622
+                Fax: 601.664.1030
+
             </p>
         </div>
 

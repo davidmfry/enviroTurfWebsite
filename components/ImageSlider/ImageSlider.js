@@ -8,10 +8,9 @@ class ImageSlider extends React.Component
         slideCount: 0,
         imageList: [
             'http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/briawood.JPG',
-            "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/Jackson-MS.jpg",
             "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/MRA.jpg",
             "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/Mississippi-College.jpg",
-            "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/spring_isd.jpg"
+            "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/TC-Williams-2.jpg",
         ],
         time: 3000
     };
@@ -65,7 +64,7 @@ class ImageSlider extends React.Component
                             background-repeat: no-repeat;
                             background-size: cover;
                             width: 100%;
-                            height: 600px;
+                            height: 640px;
                             z-index: -1;
                         }
                     `

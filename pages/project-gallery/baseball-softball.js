@@ -37,7 +37,7 @@ class BaseBallSoftBall extends React.Component
         return (
             <Layout>
             <div className="baseball-softball-container">
-                <h1>Baseball and Softball Completed Projects</h1>
+                <h1>Completed Projects <br/> Baseball and Softball</h1>
                     <div className='baseball-softball-image-container'>
                         <div className="baseball-softball-bg-image">
                         </div>

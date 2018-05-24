@@ -19,7 +19,7 @@ class IntroSection extends React.Component {
                         </div>
                         {/*<h1 className="title-1">Enviro</h1>*/}
                         {/*<h1 className="title-2">Turf</h1>*/}
-                        <p>The next generation in synthetic turf.</p>
+                        {/*<p>The next generation in synthetic turf.</p>*/}
                     </div>
 
                     <object type="image/svg+xml" data="/static/svg/arrow-alt-circle-down.svg" className="arrowDown">
