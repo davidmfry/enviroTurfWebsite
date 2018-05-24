@@ -43,7 +43,7 @@ input[type="text"]
     padding-bottom: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    float: right;
+    width: 100%;
 
 
 }
@@ -59,9 +59,13 @@ input[type="text"]
         grid-column-end: 3;
     }
 
+    button {
+        float: right;
+    }
     .btn {
         padding-left: 3rem;
         padding-right: 3rem;
         grid-column-start: 2;
+        float: right;
     }
 }
