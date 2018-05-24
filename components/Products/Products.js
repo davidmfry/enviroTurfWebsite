@@ -6,7 +6,8 @@ const Products = (props) => (
         <h1>Products</h1>
         <div className="product-wrapper ">
             <div className="product-grid">
-                <ProductCard className="product3"  color={"etblue"} title={'EnviroTurfSF'} description={'Specifically' +
+                <ProductCard className="product3"  color={"etblue"} title={'EnviroTurfSF'} description={'Is' +
+                ' specifically' +
                 ' designed to withstand' +
                 ' intense' +
                 ' use while' +

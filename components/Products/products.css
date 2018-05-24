@@ -1,17 +1,18 @@
 .product-container {
-   margin-top: 10rem;
+    margin-top: 10rem;
 }
 
 .product-container h1 {
     padding-top: 10px;
     padding-left: 10px;
     padding-bottom: 0.5rem;
+    font-size: 2.5rem;
 }
 
-.product-image {
-    display: flex;
-    justify-content: center;
-}
+/*.product-image {*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+/*}*/
 
 @media (min-width: 700px) {
     .product-wrapper {

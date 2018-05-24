@@ -28,23 +28,16 @@ const Index = (props) => (
             <WhoWeAre/>
         </ScrollableAnchor>
         <BigQuote/>
-        <div className="color-section"></div>
+        {/*<div className="color-section"></div>*/}
         <WhatWeProvide/>
         <ScrollableAnchor id={'meet-our-team'}>
             <MeetOurTeam/>
         </ScrollableAnchor>
-        {/*<Quote/>*/}
         <div className="color-section"></div>
-        {/*<ScrollableAnchor id={'testimonials'}>*/}
-                {/*<VideoSection/>*/}
-        {/*</ScrollableAnchor>*/}
         <LatestNews/>
-        {/*<Projects/>*/}
-        {/*<Quote/>*/}
         <div className="color-section"></div>
         <Products/>
         <ContactUs/>
-        {/*<Footer/>*/}
     </Layout>
 )
 
