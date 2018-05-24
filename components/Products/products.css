@@ -3,7 +3,9 @@
 }
 
 .product-container h1 {
-    padding-bottom: 5rem;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 0.5rem;
 }
 
 .product-image {
@@ -22,6 +24,10 @@
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr;
         margin-top: 1rem;
+    }
+
+    .product3 {
+        grid-column-start: 1;
     }
 
 

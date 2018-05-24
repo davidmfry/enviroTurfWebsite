@@ -4,7 +4,7 @@ import ProductCard from "../ProductCard/ProductCard";
 const Products = (props) => (
     <div className="product-container">
         <h1>Products</h1>
-        <div className="product-wrapper">
+        <div className="product-wrapper ">
             <div className="product-grid">
                 <ProductCard className="product1" color={"etorange"} title={'EnviroTurfDF'} description={'is a' +
                 ' strategically' +
@@ -29,12 +29,16 @@ const Products = (props) => (
                 </div>
             </div>
 
+            <div className="product-grid">
+                <ProductCard className="product3"  color={"etblue"} title={'EnviroTurfSF'} description={'Specifically' +
+                ' designed to withstand' +
+                ' intense' +
+                ' use while' +
+                ' retaining the softness and playing characteristics that today’s student athelete desires. The natural looking fiber is recommended for installations experiencing more than thirty hours of use per week. Tough is the best word that describes EnviroTurfSF. This product is composed of from 40-46oz of polyethylene fiber with a three ply backing. The maximum fiber coverage provides a beautiful appearance while reducing rubber “fly up.”'}/>
 
-            <ProductCard className="product3"  color={"etblue"} title={'EnviroTurfSF'} description={'Specifically' +
-            ' designed to withstand' +
-            ' intense' +
-            ' use while' +
-            ' retaining the softness and playing characteristics that today’s student athelete desires. The natural looking fiber is recommended for installations experiencing more than thirty hours of use per week. Tough is the best word that describes EnviroTurfSF. This product is composed of from 40-46oz of polyethylene fiber with a three ply backing. The maximum fiber coverage provides a beautiful appearance while reducing rubber “fly up.”'}/>
+                <div></div>
+            </div>
+
         </div>
 
     </div>

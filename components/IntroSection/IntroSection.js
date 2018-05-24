@@ -11,8 +11,22 @@ class IntroSection extends React.Component {
     {
 
         return (
-            <div>
-                <ImageSlider/>
+            <div className="intro-section-container">
+                <ImageSlider>
+                    <div className="title-group">
+                        <div className="ets-logo-container">
+                            <img className="ets-logo" src="/static/img/ets-logo.png" alt=""/>
+                        </div>
+                        {/*<h1 className="title-1">Enviro</h1>*/}
+                        {/*<h1 className="title-2">Turf</h1>*/}
+                        <p>The next generation in synthetic turf.</p>
+                    </div>
+
+                    <object type="image/svg+xml" data="/static/svg/arrow-alt-circle-down.svg" className="arrowDown">
+
+                    </object>
+
+                </ImageSlider>
             </div>
 
 
@@ -24,11 +38,4 @@ class IntroSection extends React.Component {
 
 export default IntroSection
 
-// {/*<div className="bg-image"></div>*/}
-// {/*<div className="title-group">*/}
-// {/*/!*<div className="ets-logo"></div>*!/*/}
-// {/*<h1 className="title-1">Enviro</h1>*/}
-// {/*<h1 className="title-2">Turf</h1>*/}
-// {/*</div>*/}
-// {/*<p>The next generation in synthetic turf.</p>*/}
-// {/*<i className="far fa-angle-double-down"></i>*/
+{/*<div className="bg-image"></div>*/}

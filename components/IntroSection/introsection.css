@@ -1,88 +1,119 @@
 
+.intro-section-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.intro-section-container p {
+    color: var(--etwhite);
+    font-size: 1.3rem;
+}
+
+
+
+
+.title-group {
+    background-color: rgba(32, 36, 44, 0.8);
+    margin-top: 15rem;
+    padding-top: 2rem;
+}
+
+.ets-logo {
+    /*background: url("/static/img/ets-logo.png");*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+
+}
+
+.title-1, .title-2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 6rem;
+    text-transform: uppercase;
+
+
+}
+
+.title-1 {
+    margin-top: 55px;
+    color: var(--etorange);
+
+}
+
+.title-2 {
+    color: var(--etgreen);
+    margin-top: -50px;
+}
+
+
+.arrowDown {
+    width: 65px;
+    height: 65px;
+
+}
+
+
+@media (min-width: 700px) {
+    .top-container {
+        height: 800px;
+    }
+    .bg-image {
+        height: 800px;
+    }
+    .title-1, .title-2 {
+        font-size: 11rem;
+    }
+
+    .title-group {
+        padding-top: 1.5rem;
+    }
+
+    .top-container p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width: 1500px)
+{
+    .top-container {
+        height: 1200px;
+    }
+    .bg-image {
+        height: 1200px;
+    }
+}
+
+
+
+
+
+
+
+
 /*.top-container {*/
-    /*min-height: 500px;*/
-    /*color: #fff;*/
-    /*text-align: center;*/
-    /*width: 100%;*/
+/*min-height: 500px;*/
+/*color: #fff;*/
+/*text-align: center;*/
+/*width: 100%;*/
 /*}*/
 
 /*.bg-image{*/
-    /*position: absolute;*/
-    /*background: var(--etblack) url("/static/img/football-field-2.jpg");*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    /*width: 100%;*/
-    /*height: 500px;*/
-    /*z-index: -1;*/
+/*position: absolute;*/
+/*background: var(--etblack) url("/static/img/football-field-2.jpg");*/
+/*background-position: center;*/
+/*background-repeat: no-repeat;*/
+/*background-size: cover;*/
+/*width: 100%;*/
+/*height: 500px;*/
+/*z-index: -1;*/
 /*}*/
-
-/*.title-group {*/
-    /*padding-top: 2.3rem;*/
-/*}*/
-
-/*.title-1, .title-2 {*/
-    /*font-family: 'Rubik', sans-serif;*/
-    /*font-size: 6rem;*/
-    /*text-transform: uppercase;*/
-
-
-/*}*/
-
-/*.title-1 {*/
-    /*margin-top: 55px;*/
-    /*color: var(--etorange);*/
-
-/*}*/
-
-/*.title-2 {*/
-    /*color: var(--etgreen);*/
-    /*margin-top: -50px;*/
-/*}*/
-
-/*.top-container p {*/
-    /*color: var(--etwhite);*/
-    /*font-size: 1.3rem;*/
-/*}*/
-
-/*@media (min-width: 700px) {*/
-    /*.top-container {*/
-        /*height: 800px;*/
-    /*}*/
-    /*.bg-image {*/
-        /*height: 800px;*/
-    /*}*/
-    /*.title-1, .title-2 {*/
-        /*font-size: 11rem;*/
-    /*}*/
-
-    /*.title-group {*/
-        /*padding-top: 1.5rem;*/
-    /*}*/
-
-    /*.top-container p {*/
-        /*font-size: 1.5rem;*/
-    /*}*/
-/*}*/
-
-/*@media(min-width: 1500px)*/
-/*{*/
-    /*.top-container {*/
-        /*height: 1200px;*/
-    /*}*/
-    /*.bg-image {*/
-        /*height: 1200px;*/
-    /*}*/
-/*}*/
-
-
-
-
-
-
-
-
-
 
 
 

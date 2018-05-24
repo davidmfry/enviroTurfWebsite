@@ -7,11 +7,11 @@ class ImageSlider extends React.Component
     state = {
         slideCount: 0,
         imageList: [
-            '/static/img/topBannerSlides/briawood.JPG',
-            "/static/img/topBannerSlides/Jackson-MS.jpg",
-            "/static/img/topBannerSlides/MRA.jpg",
-            "/static/img/topBannerSlides/Mississippi-College.jpg",
-            "/static/img/topBannerSlides/spring_isd.jpg"
+            'http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/briawood.JPG',
+            "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/Jackson-MS.jpg",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/MRA.jpg",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/Mississippi-College.jpg",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/spring_isd.jpg"
         ],
         time: 3000
     };
@@ -52,9 +52,30 @@ class ImageSlider extends React.Component
     render ()
     {
         return (
-            <img src={this.state.imageList[this.state.slideCount]}  width="100%" height="900" alt=""/>
+
+        <div className="bg-image">
+            {this.props.children}
+            <style jsx>
+                {
+                    `
+                    .bg-image{
+                            position: absolute;
+                            background: var(--etblack) url(${this.state.imageList[this.state.slideCount]});
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 100%;
+                            height: 600px;
+                            z-index: -1;
+                        }
+                    `
+                }
+            </style>
+        </div>
         )
     }
 }
 
 export default ImageSlider
+
+//{/*<img src={this.state.imageList[this.state.slideCount]}  width="100%" height="900" alt=""/>*/}
