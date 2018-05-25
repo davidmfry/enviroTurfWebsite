@@ -1,0 +1,27 @@
+
+schoolsObj = [
+                    {
+                        name: "",
+                        images: []
+                    }
+                ];
+                return (
+                    schoolsObj.map( (school) => (
+                        <SchoolItem name={school.name} images={school.images}/>
+                    ))
+                );
+
+
+
+
+"static/img/Baseball-Softball/Corinth-1.jpg"
+"static/img/Baseball-Softball/Corinth-2.jpg"
+"static/img/Baseball-Softball/Corinth-3.jpg"
+"static/img/Baseball-Softball/DSC02081.JPG"
+"static/img/Baseball-Softball/DSC02083.JPG"
+"static/img/Baseball-Softball/DSC02089.JPG"
+"static/img/Baseball-Softball/Lindenwood Baseball 03.01.2018.JPG"
+
+
+
+

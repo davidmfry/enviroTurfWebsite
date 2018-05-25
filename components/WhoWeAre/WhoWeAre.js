@@ -1,7 +1,7 @@
 import './whoweare.css';
 
 const WhoWeAre = (props) => (
-    <section className='who-we-are-container grid'>
+    <section className='who-we-are-container'>
         <div className="wrapper">
             <div className="who-we-are-title">
                 <h1 className="who-we-are-title1">Who <br/> we are</h1>

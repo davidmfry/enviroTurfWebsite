@@ -49,6 +49,10 @@ input[type="text"]
 }
 
 @media (min-width: 700px) {
+    .contact-us {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
     .contact-us-form{
         display: grid;
         grid-gap: 20px;

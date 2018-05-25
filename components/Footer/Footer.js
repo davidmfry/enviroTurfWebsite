@@ -1,9 +1,10 @@
+import Link from 'next/link';
 import './footer.css';
 
 const Footer = (props) => (
     <footer>
         <div className="footer-logo">
-            <img src="/static/img/ets-logo.png" alt="EnvioTurf logo" width="240"/>
+            <Link href="/"><a><img src="/static/img/ets-logo.png" alt="EnvioTurf logo" width="240"/></a></Link>
         </div>
 
         <div className='footer-social'>
@@ -26,11 +27,10 @@ const Footer = (props) => (
             <h5>Contact Information</h5>
             <p>EnviroTurf <br/>
                 PO BOX 321471
-                2580 Lakeland Drive.<br/>
+                2580 Lakeland Drive<br/>
                 Flowood, MS 39232 <br/>
                 Email: info@enviroturf.us<br/>
-                Phone: 601.644.1010
-                Cell: 601.940.3622
+                Phone: 601.664.1010
                 Fax: 601.664.1030
 
             </p>

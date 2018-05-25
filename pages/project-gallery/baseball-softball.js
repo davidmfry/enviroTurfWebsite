@@ -1,35 +1,55 @@
 import './baseball-softball.css'
 import Layout from '../../components/Layout';
+import SchoolItem from '../../components/Map/SchoolItem';
+
 class BaseBallSoftBall extends React.Component
 {
     constructor (props)
     {
         super(props)
         this.state = {
-            focusedImage: ''
         }
     }
 
     componentDidMount ()
     {
-        this.setState({focusedImage: "/static/img/Baseball-Softball/Corinth-1.jpg"})
+
     }
 
-    renderImages = (stateName) =>
+    renderImages = () =>
     {
-        const imageList = ["http://res.cloudinary.com/enviroturf/image/upload/v1527009300/Corinth-1.jpg",
-            "http://res.cloudinary.com/enviroturf/image/upload/v1527009301/Corinth-2.jpg",
-            "http://res.cloudinary.com/enviroturf/image/upload/v1527009300/Corinth-3.jpg",
-            "http://res.cloudinary.com/enviroturf/image/upload/v1527009301/Ole-Miss-1.png",
-            "http://res.cloudinary.com/enviroturf/image/upload/v1527009301/Sabetha-2.jpg",
-            "http://res.cloudinary.com/enviroturf/image/upload/v1527009300/Sabetha-1.jpg"];
+
+        const schoolsObj = [
+            {
+                name: "Corinth High School - Corinth, MS",
+                images: ["/static/img/Baseball-Softball/Corinth-1.jpg",
+                    "/static/img/Baseball-Softball/Corinth-2.jpg",
+                    "/static/img/Baseball-Softball/Corinth-3.jpg"]
+            },
+            {
+                name: "Lindewood University - Illinois",
+                images: ["/static/img/Baseball-Softball/DSC02081.JPG",
+                    "/static/img/Baseball-Softball/DSC02083.JPG",
+                    "/static/img/Baseball-Softball/DSC02089.JPG",
+                    "/static/img/Baseball-Softball/Lindenwood Baseball 03.01.2018.JPG"]
+            },
+            {
+                name: "Ole Miss - Oxford, MS",
+                images: ["/static/img/Baseball-Softball/Ole-Miss-1.png"]
+            },
+            {
+                name: "Sabetha Baseball Field - Sabetha, KS",
+                images: ["/static/img/Baseball-Softball/Sabetha-1.jpg",
+                    "/static/img/Baseball-Softball/Sabetha-2.jpg"]
+            },
+
+        ];
         return (
-            imageList.map( (image) => (
-                <div className="baseball-softball-image-box">
-                    <img onClick={() => this.setState({focusedImage: image})} src={image} alt="" width="100%" height="100%"/>
-                </div>
+            schoolsObj.map( (school) => (
+                <SchoolItem name={school.name} images={school.images}/>
             ))
-        )
+        );
+
     }
 
     render ()
@@ -37,34 +57,11 @@ class BaseBallSoftBall extends React.Component
         return (
             <Layout>
             <div className="baseball-softball-container">
-                <h1>Completed Projects <br/> Baseball and Softball</h1>
-                    <div className='baseball-softball-image-container'>
-                        <div className="baseball-softball-bg-image">
-                        </div>
-                    </div>
-
-
+                <h1>Completed Projects <br/>(Baseball/Softball)</h1>
                 <div className="baseball-softball-image-box-container">
                     {this.renderImages()}
                 </div>
 
-
-                <style jsx>
-                    {
-                        `
-                            .baseball-softball-bg-image {
-
-                            background: var(--etblack) url("${this.state.focusedImage}");
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            width: 100%;
-                            height: 600px;
-                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-                            }
-                        `
-                    }
-                </style>
             </div>
             </Layout>
         )

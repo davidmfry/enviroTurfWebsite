@@ -1,48 +1,135 @@
-.main-nav{
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    background-color: var(--etblack);
-    height: auto;
-    margin-top: 0;
-    text-align: center;
+.nav {
+background: var(--etblack);
+height: 50px;
+margin: 0;
+z-index: 9999;
 }
 
-.main-nav-logo {
-    max-width: 100%;
-    height: auto;
-    padding-left: 20px;
+.nav-logo {
+display: block;
+float: right;
+padding-top: .5rem;
+padding-right: 1rem;
 }
 
-.main-nav ul {
-    text-align: center;
-    width: 100%;
-    padding: 0;
-    list-style: none;
-
+.nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+position: absolute;
 }
 
-.main-nav li {
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-    font-size: 1.8em;
-    width: 100%;
-    padding-top: .5em;
-    padding-bottom: .5em;
+.nav li {
+display: inline-block;
+float: left;
+margin-right: 1px;
 
 }
 
-.main-nav a {
-    display: block;
-    color: var(--etwhite);
-    text-decoration: none;
-    width: 100%;
+.nav li a {
+display: block;
+/*min-width: 140px;*/
+width: 100%;
+height: 50px;
+margin-right: 20px;
+line-height: 50px;
+text-align: center;
+font-family: 'Rubik', sans-serif;
+font-weight: bold;
+color: var(--etwhite);
+background: var(--etblack);
+text-decoration: none;
+text-transform: uppercase;
 }
 
-.main-nav a:hover {
-    background-color: var(--etwhite);
-    color: var(--etblack);
-    width: 100%;
+/* hover state for top level links */
+.nav li:hover a {
+background: var(--etorange);
+}
+
+/* Style for dropdown links */
+.nav li:hover ul li a {
+background: #fff;
+color: var(--etblack);
+height: 40px;
+line-height: 40px;
+width: 100%;
+
+}
+
+/* Hover state for dropdown links */
+.nav li:hover ul li a:hover {
+background: var(--etorange);
+color: var(--etwhite);
+}
+
+/* Hide dropdown links until they are needed */
+.nav li ul {
+display: none;
+}
+
+/* Make dropdown links vertical */
+.nav li ul li {
+display: block;
+float: none;
+}
+
+/* Prevent Text wrapping on dropdown links */
+
+.nav li ul li a {
+width: auto;
+min-width: 100px;
+padding: 0 20px;
+}
+
+/* display the dropdown on hover */
+.nav ul li a:hover + .hidden, .hidden:hover {
+display: block;
+background: var(--etorange);
+}
+
+/* Hide checkbox */
+input[type=checkbox] {
+display: none;
+}
+
+/* Show menu when invisible checkbox is checked */
+input[type=checkbox]:checked ~ #menu {
+display: block;
+}
+
+.show-menu {
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: none;
+color: #fff;
+padding-left: 10px;
+display: none;
+font-size: 2rem;
+text-align: left;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 760px) {
+.nav-logo{
+display: none;
+}
+/* Make dropdown links appear links */
+.nav ul {
+position: static;
+display: none;
+}
+.nav li {
+margin-bottom: 1px;
+}
+
+/* Make all menu links full width */
+.nav ul li, .nav li a {
+width: 100%;
+}
+
+.show-menu {
+display: block;
+}
 
 }

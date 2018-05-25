@@ -11,7 +11,7 @@ const Products = (props) => (
                 ' designed to withstand' +
                 ' intense' +
                 ' use while' +
-                ' retaining the softness and playing characteristics that today’s student athelete desires. The natural looking fiber is recommended for installations experiencing more than thirty hours of use per week. Tough is the best word that describes EnviroTurfSF. This product is composed of from 40-46oz of polyethylene fiber with a three ply backing. The maximum fiber coverage provides a beautiful appearance while reducing rubber “fly up.”'}/>
+                ' retaining the softness and playing characteristics that today’s student athlete desires. The natural looking fiber is recommended for installations experiencing more than thirty hours of use per week. Tough is the best word that describes EnviroTurfSF. This product is composed of from 40-46oz of polyethylene fiber with a three ply backing. The maximum fiber coverage provides a beautiful appearance while reducing rubber “fly up.”'}/>
 
                 <div className="product-image pi2">
                     <img src="/static/img/EnviroTurfSF.png" alt="EnviroTurm SF Product"/>

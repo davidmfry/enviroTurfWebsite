@@ -18,9 +18,12 @@ class FootBallSoccer extends React.Component
     {
         return (
             <Layout>
-                  <div>
-                      <h1>Completed Projects</h1>
-                      <Map/>
+                  <div className="map-container">
+                      <h1>Completed Projects <br/>(Football/Soccer)</h1>
+                      <div className="map">
+                          <Map/>
+                      </div>
+
                   </div>
             </Layout>
         )

@@ -4,6 +4,12 @@
 
 @media (min-width: 700px)
 {
+    .meet-our-team-container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 3rem;
+    }
+
     .meet-our-team-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr ;

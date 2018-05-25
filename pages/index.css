@@ -24,9 +24,9 @@ body {
     text-align: center;
 }
 
-.container {
-    display: grid;
-}
+/*.container {*/
+    /*display: grid;*/
+/*}*/
 
 img {
     display: inline-block;

@@ -15,14 +15,6 @@ class ImageSlider extends React.Component
         time: 3000
     };
 
-    // nextSlide = () => {
-    //     this.setState({slideCount: this.state.slideCount += 1})
-    // };
-    //
-    // previousSlide = () => {
-    //     this.setState({slideCount: this.state.slideCount -= 1})
-    // };
-
     changeImg = () => {
 
 
@@ -64,7 +56,7 @@ class ImageSlider extends React.Component
                             background-repeat: no-repeat;
                             background-size: cover;
                             width: 100%;
-                            height: 640px;
+                            height: 600px;
                             z-index: -1;
                         }
                     `

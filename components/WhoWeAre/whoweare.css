@@ -1,8 +1,6 @@
 .who-we-are-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30rem;
+   height: 500px;
+    margin-top: 5rem;
 }
 
 .who-we-are-info {

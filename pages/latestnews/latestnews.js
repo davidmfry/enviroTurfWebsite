@@ -38,7 +38,7 @@ class LatestNewsSinglePage extends React.Component
 
                     <div className="news-page-img">
                     </div>
-                    <p className='news-caption'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae dolore eveniet fuga fugiat, nisi officia perspiciatis porro repudiandae temporibus.</p>
+                    <p className='news-caption'></p>
 
                     <h1 className="news-headline">{this.state.headline}</h1>
                     <p>{this.state.content}</p>

@@ -20,6 +20,7 @@ import Map from "../components/Map/Map";
 import ContactUs from "../components/ContactUs/ContactUs";
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
+import SchoolItem from "../components/Map/SchoolItem";
 
 const Index = (props) => (
     <Layout>
