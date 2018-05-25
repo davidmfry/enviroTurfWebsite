@@ -23,10 +23,7 @@ const MissionStatment = () => {
                 {
                     `
                         .mission-container {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
+
                             margin: 0 1rem;
                             text-align: left;
 
