@@ -13,14 +13,18 @@ class SchoolItem extends React.Component
                 <style jsx>
                     {
                         `
-                            .school-item-container
-                            {
-                                margin: 2rem 2rem;
-                            }
 
                             .school-item-container h2
                             {
                                 margin: 2rem 1rem;
+                            }
+
+                            @media (min-width: 700px)
+                            {
+                                .school-item-container
+                                {
+                                    margin: 2rem 2rem;
+                                }
                             }
                         `
                     }
