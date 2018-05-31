@@ -14,12 +14,16 @@
     "@fortawesome/fontawesome": "^1.1.5",
     "@fortawesome/react-fontawesome": "0.0.18",
     "@zeit/next-css": "^0.1.5",
+    "bowser": "^1.9.3",
     "firebase": "^5.0.3",
+    "global": "^4.3.2",
     "next": "^5.1.0",
     "nodemon": "^1.17.4",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-icons": "^2.2.7",
+    "react-no-ssr": "^1.1.0",
+    "react-render-in-browser": "^0.2.0",
     "react-scrollable-anchor": "^0.6.1"
   }
 }

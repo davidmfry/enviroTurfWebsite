@@ -12,6 +12,13 @@ const ProductCard = (props) => (
                         color: var(--${props.color});
                     }
 
+                    @media screen and (min-width:0) and (min-resolution: .001dpcm)
+                    {
+                        .product-card-container strong {
+                        color: ${props.ieColor};
+                    }
+                    }
+
                 `
             }
         </style>

@@ -6,7 +6,7 @@ const Products = (props) => (
         <h1>Products</h1>
         <div className="product-wrapper ">
             <div className="product-grid">
-                <ProductCard className="product3"  color={"etblue"} title={'EnviroTurfSF'} description={'Is' +
+                <ProductCard className="product3"  color={"etblue"} ieColor={'#0083EE'} title={'EnviroTurfSF'} description={'Is' +
                 ' specifically' +
                 ' designed to withstand' +
                 ' intense' +
@@ -20,7 +20,7 @@ const Products = (props) => (
             </div>
 
             <div className="product-grid">
-                <ProductCard className="product2"  color={"etgreen"} title={'EnviroTurfM'} description={'sets the' +
+                <ProductCard className="product2"  color={"etgreen"} ieColor={'#0D8703'} title={'EnviroTurfM'} description={'sets the' +
                 ' standard for resilience and' +
                 ' performance in an' +
                 ' extruded fiber. It provides the look and feel of natural grass and reduces glare due to the dispersement of light reflection while providing superior ball roll after extensive use. We use 46oz of fiber with at least 28oz of polyurethane over a three ply backing. The extruded fiber offers the ultimate combination in softness and durability, giving it an unsurpassed, grass-like quality.'}/>
@@ -31,7 +31,7 @@ const Products = (props) => (
             </div>
 
             <div className="product-grid">
-                <ProductCard className="product1" color={"etorange"} title={'EnviroTurfDF'} description={'is a' +
+                <ProductCard className="product1" color={"etorange"} ieColor={'#FF910E'} title={'EnviroTurfDF'} description={'is a' +
                 ' strategically' +
                 ' blended' +
                 ' combination' +

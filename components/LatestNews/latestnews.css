@@ -1,5 +1,21 @@
+@media screen and (min-width:0) and (min-resolution: .001dpcm)
+{
+    .latest-news-container{
+        display: none;
+    }
+    .latest-news-container h1 {
+        color: white;
+    }
+}
+
 .latest-news-container {
+    display: block;
     padding-top: 10rem;
+}
+
+
+.latest-news-container h1 {
+    color: var(--etgreen);
 }
 
 .latest-news-container h1 {

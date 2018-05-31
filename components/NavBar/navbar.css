@@ -109,6 +109,68 @@ text-align: left;
 }
 
 
+@media screen and (min-width:0) and (min-resolution: .001dpcm) {
+
+    .nav {
+        background: #20242C;
+    }
+
+    .nav li a {
+        background: #20242C;
+        color: #ECECEC;
+
+    }
+
+    .nav li:hover a {
+        background: #FF910E;
+    }
+
+    .nav li:hover ul li a {
+        background: #ECECEC;
+        color: #20242C;
+    }
+
+    .nav li:hover ul li a:hover {
+        background: #FF910E;
+        color: #ECECEC;
+    }
+
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* IE10-specific styles go here */
+
+    /*IE 9, 10, 11 styles*/
+
+    /***************************Nav Bar*************************/
+    .nav {
+        background: #20242C;
+    }
+
+    .nav li a {
+        color: #ECECEC;
+
+    }
+
+    .nav li:hover a {
+        background: #FF910E;
+    }
+
+    .nav li:hover ul li a {
+        background: #20242C;
+    }
+
+    .nav li:hover ul li a:hover {
+        background: #FF910E;
+        color: #ECECEC;
+    }
+    /************************End Nav Bar*************************/
+
+
+    /***************************Intro Section*************************/
+
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 760px) {
 .nav-logo{

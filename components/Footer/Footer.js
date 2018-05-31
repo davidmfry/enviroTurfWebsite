@@ -9,16 +9,16 @@ const Footer = (props) => (
 
         <div className='footer-social'>
             <div className="footer-social-icon">
-                <a href=""><img  src="/static/social/twitter.png" alt="twitter icon"/></a>
+                <a href="https://twitter.com/enviroturfus"><img  src="/static/social/twitter.png" alt="twitter icon"/></a>
             </div>
             <div className="footer-social-icon">
-                <img src="/static/social/facebook.png" alt="facebook icon"/><a href=""></a>
+                <a href="https://www.facebook.com/enviroturfus/"><img src="/static/social/facebook.png" alt="facebook icon"/></a>
             </div>
             <div className="footer-social-icon">
-                <a href=""><img src="/static/social/instagram.png" alt="instagram icon"/></a>
+                <a href="https://www.instagram.com/enviroprobyets/"><img src="/static/social/instagram.png" alt="instagram icon"/></a>
             </div>
             <div className="footer-social-icon">
-                <a href=""><img src="/static/social/linkedin-icon.png" alt="linkedin icon"/></a>
+                <a href="https://www.linkedin.com/in/james-bateman-47b576150/"><img src="/static/social/linkedin-icon.png" alt="linkedin icon"/></a>
             </div>
         </div>
 

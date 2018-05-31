@@ -13,6 +13,16 @@
     font-size: 5rem;
 }
 
+@media screen and (min-width:0) and (min-resolution: .001dpcm) {
+    .who-we-are-info p {
+        text-align: center;
+    }
+
+    .who-we-are-container h1 {
+        color: #0D8703;
+    }
+}
+
 
 @media (min-width: 700px)
 {
@@ -47,6 +57,7 @@
 
     }
 }
+
 
 @media (min-width: 1000px) {
     .wrapper {

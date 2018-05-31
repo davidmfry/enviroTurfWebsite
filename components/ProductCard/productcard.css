@@ -10,3 +10,15 @@
     margin: 0;
     padding: 10px;
 }
+
+@media screen and (min-width:0) and (min-resolution: .001dpcm)
+{
+    .product-card-container {
+        background: #20242C;
+        color: #ECECEC;
+    }
+
+    .product-image {
+        padding-top: 20px;
+    }
+}

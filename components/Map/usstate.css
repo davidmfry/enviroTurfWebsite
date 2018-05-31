@@ -16,6 +16,17 @@
 .us-state-image {
 }
 
+
+@media (min-width: 700px)
+{
+    .us-state-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /*.image-box-container {*/
     /*display: grid;*/
     /*grid-gap: 10px;*/

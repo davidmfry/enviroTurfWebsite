@@ -28,7 +28,7 @@ class UsState extends React.Component
                 schoolsObj = [
                     {
                         name: "American Christian Academy - Tuscaloosa, AL",
-                        images: ["/static/img/states/Alabama/aca2-004.jpg",
+                        images: [
                             "/static/img/states/Alabama/aca2-007.jpg",
                             "/static/img/states/Alabama/aca2-ari.jpg"]
                     },
@@ -42,20 +42,16 @@ class UsState extends React.Component
                     },
                     {
                         name: "Faulkner University - Montgomery, AL",
-                        images: ["/static/img/states/Alabama/Faulkner-1.jpg",
-                            "/static/img/states/Alabama/Faulkner-2.JPG",
-                            "/static/img/states/Alabama/Faulkner-3.JPG"]
+                        images: ["/static/img/states/Alabama/Faulkner-1.jpg"]
                     },
                     {
                         name: "Miles College - Fairfield, AL",
                         images: ["/static/img/states/Alabama/Miles-1.jpg",
-                            "/static/img/states/Alabama/Miles-2.jpg",
                             "/static/img/states/Alabama/Miles-3.jpg"]
                     },
                     {
                         name: "University of West Alabama - Livingston, AL",
                         images: ["/static/img/states/Alabama/UWA-009.JPG",
-                            "/static/img/states/Alabama/UWA-011.JPG",
                             "/static/img/states/Alabama/UWA-012.JPG"]
                     }
                 ];
@@ -69,54 +65,39 @@ class UsState extends React.Component
                 schoolsObj = [
                     {
                         name: "Bryant High School - Bryant, AR",
-                        images: [ "/static/img/states/Arkansas/Bryant-2.JPG",
-                            "/static/img/states/Arkansas/Bryant-3.JPG",
-                            "/static/img/states/Arkansas/Bryant-4.JPG",
-                            "/static/img/states/Arkansas/Bryant-5.jpg",
+                        images: [ "/static/img/states/Arkansas/Bryant-1.JPG",
+                            "/static/img/states/Arkansas/Bryant-2.JPG",
                             "/static/img/states/Arkansas/Bryant-6.jpg"]
                     },
                     {
                         name: "Fountain Lake High School - Hot Springs, AR",
-                        images: [ "/static/img/states/Arkansas/Fountain-1.jpg",
+                        images: [
                             "/static/img/states/Arkansas/Fountain-2.jpg",
                             "/static/img/states/Arkansas/Fountain-3.jpg",
-                            "/static/img/states/Arkansas/Fountain-4.jpg",
-                            "/static/img/states/Arkansas/Fountain-5.jpg",
-                            "/static/img/states/Arkansas/Fountain-6.JPG",
-                            "/static/img/states/Arkansas/Fountain-7.JPG"]
+                            "/static/img/states/Arkansas/Fountain-4.jpg"]
                     },
                     {
                         name: "Lake Hamilton High School - Pearcy, AR",
                         images: ["/static/img/states/Arkansas/Hamilton-1.jpg",
-                            "/static/img/states/Arkansas/Hamilton-2.jpg",
-                            "/static/img/states/Arkansas/Hamilton-3.jpg",
-                            "/static/img/states/Arkansas/Hamilton-4.jpg",
-                            "/static/img/states/Arkansas/Hamilton-5.png",
-                            "/static/img/states/Arkansas/Hamilton-6.png"]
+                            "/static/img/states/Arkansas/Hamilton-4.jpg"
+                            ]
                     },
                     {
                         name: "Little Rock Central High School - Little Rock, AR",
-                        images: ["/static/img/states/Arkansas/Central-1.JPG",
+                        images: [
                             "/static/img/states/Arkansas/Central-2.JPG",
-                            "/static/img/states/Arkansas/Central-3.JPG",
-                            "/static/img/states/Arkansas/Central-4.JPG",
                             "/static/img/states/Arkansas/Central-5.JPG"]
                     },
                     {
                         name: "Little Rock Christian Academy - Little Rock, AR",
-                        images: ["/static/img/states/Arkansas/Christian-1.JPG",
-                            "/static/img/states/Arkansas/Christian-2.JPG",
-                            "/static/img/states/Arkansas/Christian-3.JPG",
-                            "/static/img/states/Arkansas/Christian-4.JPG",
-                            "/static/img/states/Arkansas/Christian-5.JPG"]
+                        images: [
+                            "/static/img/states/Arkansas/Christian-1.JPG",
+                            "/static/img/states/Arkansas/Christian-3.JPG"]
                     },
                     {
                         name: "Morrilton High School - Morrilton, AR",
                         images: ["/static/img/states/Arkansas/Morrilton-1.JPG",
-                            "/static/img/states/Arkansas/Morrilton-2.JPG",
-                            "/static/img/states/Arkansas/Morrilton-3.JPG",
-                            "/static/img/states/Arkansas/Morrilton-4.JPG",
-                            "/static/img/states/Arkansas/Morrilton-5.JPG"]
+                            "/static/img/states/Arkansas/Morrilton-3.JPG"]
                     },
                     {
                         name: "North Little Rock High School - Little Rock, AR",
@@ -124,18 +105,13 @@ class UsState extends React.Component
                     },
                     {
                         name: "Russellville High School - Russellville, AR",
-                        images: ["/static/img/states/Arkansas/Russellville-1.jpg",
-                            "/static/img/states/Arkansas/Russellville-2.JPG",
-                            "/static/img/states/Arkansas/Russellville-3.JPG",
-                            "/static/img/states/Arkansas/Russellville-4.JPG"]
+                        images: ["/static/img/states/Arkansas/Russellville-1.jpg"]
                     },
                     {
                         name: "Vilonia High School - Vilonia, AR",
                         images: [ "/static/img/states/Arkansas/Vilonia-1.JPG",
-                            "/static/img/states/Arkansas/Vilonia-2.JPG",
                             "/static/img/states/Arkansas/Vilonia-3.jpg",
-                            "/static/img/states/Arkansas/Vilonia-4.JPG",
-                            "/static/img/states/Arkansas/Vilonia-5.JPG"]
+                            "/static/img/states/Arkansas/Vilonia-4.JPG"]
                     },
 
                 ];
@@ -149,10 +125,7 @@ class UsState extends React.Component
                 schoolsObj = [
                     {
                         name:"Lindenwood University Bellville - Bellville, IL",
-                        images: ["/static/img/states/Illinois/Lindenwood-1.jpg",
-                            "/static/img/states/Illinois/Lindenwood-2.jpg",
-                            "/static/img/states/Illinois/Lindenwood-3.jpg",
-                            "/static/img/states/Illinois/Lindenwood-4.jpg",
+                        images: [
                             "/static/img/states/Illinois/Lindenwood-5.jpg",
                             "/static/img/states/Illinois/Lindenwood-6.jpg"]
                     }
@@ -213,11 +186,7 @@ class UsState extends React.Component
                     },
                     {
                         name: "Madison Central High School - Madison, MS",
-                        images: ["/static/img/states/Mississippi/Madison Central High School - Madison, MS_1.JPG",
-                            "/static/img/states/Mississippi/Madison Central High School - Madison, MS_2.JPG",
-                            "/static/img/states/Mississippi/Madison Central High School - Madison, MS_3.JPG",
-                            "/static/img/states/Mississippi/Madison Central High School - Madison, MS_4.JPG",
-                            "/static/img/states/Mississippi/Madison Central High School - Madison, MS_5.JPG"]
+                        images: ["/static/img/states/Mississippi/Madison Central High School - Madison, MS_3.JPG"]
                     },
                     {
                         name: "Belhaven University - Jackson, MS",
@@ -254,15 +223,13 @@ class UsState extends React.Component
                     },
                     {
                         name: "Mississippi College - Clinton, MS",
-                        images: ["/static/img/states/Mississippi/Mississippi College - Clinton, MS.jpg"]
+                        images: ["/static/img/states/Mississippi/Mississippi College - Clinton, MS2.jpg"]
                     },
                     {
                         name: "Pearl High School - Pearl, MS",
-                        images: ["/static/img/states/Mississippi/Pearl High School - Pearl, MS_1.jpg",
+                        images: [
                             "/static/img/states/Mississippi/Pearl High School - Pearl, MS_2.JPG",
-                            "/static/img/states/Mississippi/Pearl High School - Pearl, MS_3.JPG",
-                            "/static/img/states/Mississippi/Pearl High School - Pearl, MS_4.JPG",
-                            "/static/img/states/Mississippi/Pearl High School - Pearl, MS_5.JPG"]
+                            "/static/img/states/Mississippi/Pearl High School - Pearl, MS_3.JPG"]
                     },
 
                 ];
@@ -278,9 +245,7 @@ class UsState extends React.Component
                     {
                         name: "Lindenwood University - Saint Charles, MO",
                         images: ["/static/img/states/Missouri/100_0004.JPG",
-                            "/static/img/states/Missouri/100_0007.JPG",
                             "/static/img/states/Missouri/100_0014.JPG",
-                            "/static/img/states/Missouri/Hunter Stadium (Arial View).JPG",
                             "/static/img/states/Missouri/Lindenwood Aerial.jpg"]
                     },
                     {
@@ -297,7 +262,7 @@ class UsState extends React.Component
                 schoolsObj = [
                     {
                         name: "Weddington Chapel Park - Charlotte, NC",
-                        images: ["/static/img/states/North Carolina/Weddington-1.JPG",
+                        images: [
                             "/static/img/states/North Carolina/Weddington-2.JPG",
                             "/static/img/states/North Carolina/Weddington-3.JPG"]
                     }
@@ -317,13 +282,6 @@ class UsState extends React.Component
                         name: "University of Memphis - Memphis, TN",
                         images: [
                             "/static/img/states/Tennessee/UofM-1.JPG",
-                            "/static/img/states/Tennessee/UofM-2.JPG",
-                            "/static/img/states/Tennessee/UofM-3.JPG",
-                            "/static/img/states/Tennessee/UofM-4.JPG",
-                            "/static/img/states/Tennessee/UofM-5.JPG",
-                            "/static/img/states/Tennessee/UofM-6.JPG",
-                            "/static/img/states/Tennessee/UofM-7.JPG",
-                            "/static/img/states/Tennessee/UofM-8.JPG",
                             "/static/img/states/Tennessee/UofM-9.JPG"]
                     }
                 ];
@@ -337,8 +295,7 @@ class UsState extends React.Component
                 schoolsObj = [
                     {
                         name: "Dekaney High School - Houston, TX",
-                        images: ["/static/img/states/Texas/Dekaney-1.jpg",
-                            "/static/img/states/Texas/Dekaney-2.jpg",]
+                        images: ["/static/img/states/Texas/Dekaney-1.jpg"]
                     },
                     {
                         name: "Spring High School - Spring, Texas",

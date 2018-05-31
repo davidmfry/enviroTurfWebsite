@@ -12,7 +12,7 @@ class ImageSlider extends React.Component
             "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/Mississippi-College.jpg",
             "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/TC-Williams-2.jpg",
         ],
-        time: 3000
+        time: 7000
     };
 
     changeImg = () => {
@@ -31,7 +31,6 @@ class ImageSlider extends React.Component
     componentDidMount()
     {
         this.changeImg();
-        //setTimeout(() => console.log("testing-didMoount"), 1000);
         window.setInterval(() => this.changeImg(), this.state.time)
     }
 
@@ -59,6 +58,13 @@ class ImageSlider extends React.Component
                             height: 600px;
                             z-index: -1;
                         }
+
+                        @media screen and (min-width:0) and (min-resolution: .001dpcm)
+                        {
+                            background: url(http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/briawood.JPG)
+                        }
+
+
                     `
                 }
             </style>

@@ -38,6 +38,18 @@
     font-size: 50px;
 }
 
+@media screen and (min-width:0) and (min-resolution: .001dpcm) {
+    .what-we-provide-title h1 {
+        color: #0D8703;
+    }
+    .what-we-provide-info{
+        display: inline-block;
+    }
+    .what-we-provide-info li:before {
+        color: #FF910E;
+    }
+}
+
 @media (min-width: 700px)
 {
     .what-we-wrapper {

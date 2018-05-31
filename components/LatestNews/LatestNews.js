@@ -34,6 +34,16 @@ class LatestNews extends React.Component
         })
     }
 
+    renderLatestNewsItems = () => {
+
+
+        return (
+            this.state.items.map( (item) => (
+                <Link as={`/latestnews/${item.id}`} href={`/latestnews/latestnews?id=${item.id}`}><a><NewsItem key={item.id} id={item.id} image={item.headerImage} headline={item.headline} description={item.description}/></a></Link>
+            ))
+        )
+    }
+
     render()
     {
         console.log(this.state.items);
@@ -42,9 +52,7 @@ class LatestNews extends React.Component
             <div className="latest-news-container">
                 <h1>Latest News</h1>
                 <div className="latest-news-wrapper">
-                    {this.state.items.map( (item) => (
-                        <Link as={`/latestnews/${item.id}`} href={`/latestnews/latestnews?id=${item.id}`}><a><NewsItem key={item.id} id={item.id} image={item.headerImage} headline={item.headline} description={item.description}/></a></Link>
-                    ))}
+                    {this.renderLatestNewsItems()}
                 </div>
 
             </div>
