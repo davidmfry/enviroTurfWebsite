@@ -65,7 +65,7 @@ class UsState extends React.Component
                 schoolsObj = [
                     {
                         name: "Bryant High School - Bryant, AR",
-                        images: [ "/static/img/states/Arkansas/Bryant-1.JPG",
+                        images: [
                             "/static/img/states/Arkansas/Bryant-2.JPG",
                             "/static/img/states/Arkansas/Bryant-6.jpg"]
                     },
