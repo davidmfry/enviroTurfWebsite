@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import global from 'global';
-import NoSSR from 'react-no-ssr';
 
 if (typeof window !== 'undefined') {require('react-render-in-browser');}
 
