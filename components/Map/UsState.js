@@ -56,9 +56,11 @@ class UsState extends React.Component
                     }
                 ];
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
                 );
             case "Arkansas":
 
@@ -83,17 +85,18 @@ class UsState extends React.Component
                             ]
                     },
                     {
-                        name: "Little Rock Central High School - Little Rock, AR",
-                        images: [
-                            "/static/img/states/Arkansas/Central-2.JPG",
-                            "/static/img/states/Arkansas/Central-5.JPG"]
-                    },
-                    {
                         name: "Little Rock Christian Academy - Little Rock, AR",
                         images: [
                             "/static/img/states/Arkansas/Christian-1.JPG",
                             "/static/img/states/Arkansas/Christian-3.JPG"]
                     },
+                    {
+                        name: "Little Rock Central High School - Little Rock, AR",
+                        images: [
+                            "/static/img/states/Arkansas/Central-2.JPG",
+                            "/static/img/states/Arkansas/Central-5.JPG"]
+                    },
+
                     {
                         name: "Morrilton High School - Morrilton, AR",
                         images: ["/static/img/states/Arkansas/Morrilton-1.JPG",
@@ -116,9 +119,11 @@ class UsState extends React.Component
 
                 ];
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
                 );
             case "Illinois":
 
@@ -131,9 +136,11 @@ class UsState extends React.Component
                     }
                 ]
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
                 );
             case "Kansas":
                 schoolsObj = [
@@ -146,9 +153,11 @@ class UsState extends React.Component
                 ];
 
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
                 );
             case "Kentucky":
                 schoolsObj = [
@@ -158,9 +167,11 @@ class UsState extends React.Component
                     }
                 ];
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
                 );
             case "Louisiana":
                 schoolsObj = [
@@ -170,24 +181,14 @@ class UsState extends React.Component
                     }
                 ];
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
-                );
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
+                )
             case "Mississippi":
                 schoolsObj = [
-                    {
-                        name: "Madison Ridgeland Academy - Madison, MS",
-                        images: ["/static/img/states/Mississippi/Madison Ridgeland Academy - Madison, MS_1.jpg",
-                            "/static/img/states/Mississippi/Madison Ridgeland Academy - Madison, MS_2.jpg",
-                            "/static/img/states/Mississippi/Madison Ridgeland Academy - Madison, MS_3.jpg",
-                            "/static/img/states/Mississippi/Madison Ridgeland Academy - Madison, MS_4.jpg",
-                            "/static/img/states/Mississippi/Madison Ridgeland Academy - Madison, MS_5.jpg"]
-                    },
-                    {
-                        name: "Madison Central High School - Madison, MS",
-                        images: ["/static/img/states/Mississippi/Madison Central High School - Madison, MS_3.JPG"]
-                    },
                     {
                         name: "Belhaven University - Jackson, MS",
                         images: ["/static/img/states/Mississippi/Belhaven-1.jpg"]
@@ -217,6 +218,18 @@ class UsState extends React.Component
                         images: ["/static/img/states/Mississippi/Lafayette-1.jpg"]
                     },
                     {
+                        name: "Madison Ridgeland Academy - Madison, MS",
+                        images: ["/static/img/states/Mississippi/Madison Ridgeland Academy - Madison, MS_1.jpg",
+                            "/static/img/states/Mississippi/Madison Ridgeland Academy - Madison, MS_2.jpg",
+                            "/static/img/states/Mississippi/Madison Ridgeland Academy - Madison, MS_3.jpg",
+                            "/static/img/states/Mississippi/Madison Ridgeland Academy - Madison, MS_4.jpg",
+                            "/static/img/states/Mississippi/Madison Ridgeland Academy - Madison, MS_5.jpg"]
+                    },
+                    {
+                        name: "Madison Central High School - Madison, MS",
+                        images: ["/static/img/states/Mississippi/Madison Central High School - Madison, MS_3.JPG"]
+                    },
+                    {
                         name: "Meridian High School - Meridian, MS",
                         images: ["/static/img/states/Mississippi/Meridian-1.jpg",
                             "/static/img/states/Mississippi/Meridian-2.jpg",]
@@ -235,11 +248,12 @@ class UsState extends React.Component
                 ];
 
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
-                );
-
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
+                )
             case "Missouri":
                 schoolsObj = [
                     {
@@ -254,10 +268,12 @@ class UsState extends React.Component
                     }
                 ];
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
-                );
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
+                )
             case "North Carolina":
                 schoolsObj = [
                     {
@@ -268,10 +284,12 @@ class UsState extends React.Component
                     }
                 ];
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
-                );
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
+                )
             case "Tennessee":
                 schoolsObj = [
                     {
@@ -286,10 +304,12 @@ class UsState extends React.Component
                     }
                 ];
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
-                );
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
+                )
 
             case 'Texas':
                 schoolsObj = [
@@ -309,10 +329,12 @@ class UsState extends React.Component
                 ];
 
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
-                );
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
+                )
             case "Virginia":
                 schoolsObj = [
                     {
@@ -322,10 +344,12 @@ class UsState extends React.Component
                     },
                 ];
                 return (
-                    schoolsObj.map( (school) => (
-                        <SchoolItem name={school.name} images={school.images}/>
-                    ))
-                );
+                    schoolsObj.map( (school) => {
+                        let schoolUrl = `/project-gallery/state/schoolpage?schoolName=${school.name}`;
+                        return (<li className="school-names"><Link href={schoolUrl}><a><h2>{school.name}</h2></a></Link>
+                        </li>)
+                    })
+                )
         }
     }
 
@@ -334,7 +358,10 @@ class UsState extends React.Component
         return (
             <div className="us-state-container">
                 <h1>{this.props.usState} Projects</h1>
-                {this.renderStateImages(this.props.usState)}
+                <ul >
+                    {this.renderStateImages(this.props.usState)}
+                </ul>
+
                 <h3><Link href="/project-gallery/football-soccer"><a>Back to map</a></Link></h3>
             </div>
         )

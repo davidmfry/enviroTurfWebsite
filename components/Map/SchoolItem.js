@@ -11,8 +11,10 @@ class SchoolItem extends React.Component
                 <div className="school-item-title">
                     <h2>{this.props.name}</h2>
                 </div>
+                <div className="school-item-grid">
+                    <ImageGrid images={this.props.images}/>
+                </div>
 
-                <ImageGrid images={this.props.images}/>
                 <style jsx>
                     {
                         `
@@ -31,6 +33,10 @@ class SchoolItem extends React.Component
                                 text-transform: uppercase;
                             }
 
+                            .school-item-grid {
+                                margin-top: 1.5rem;
+                            }
+
 
 
                             @media (min-width: 700px)
@@ -38,6 +44,12 @@ class SchoolItem extends React.Component
                                 .school-item-container
                                 {
                                     margin: 2rem 2rem;
+                                }
+
+                                .school-item-grid {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
                                 }
                             }
                         `

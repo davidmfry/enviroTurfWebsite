@@ -8,6 +8,28 @@
     margin-bottom: 2rem;
 }
 
+.us-state-container li {
+    list-style: none;
+    text-align: left;
+}
+
+.us-state-container a {
+    text-decoration: none;
+    color: #20242C;
+
+}
+
+.us-state-container a:visited {
+    text-decoration: none;
+    color: #20242C;
+
+}
+
+.us-state-container h3 a:visited{
+    color: #FF910E;
+}
+
+
 .us-state-image-container {
     width: 100%;
 
