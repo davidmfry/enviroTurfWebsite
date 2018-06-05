@@ -27,7 +27,7 @@ class BaseBallSoftBall extends React.Component
                     "/static/img/Baseball-Softball/Corinth-3.jpg"]
             },
             {
-                name: "Lindewood University - Illinois",
+                name: "Lindenwood University - Illinois",
                 images: ["/static/img/Baseball-Softball/DSC02081.JPG",
                     "/static/img/Baseball-Softball/DSC02083.JPG",
                     "/static/img/Baseball-Softball/DSC02089.JPG",
