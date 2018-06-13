@@ -1,7 +1,8 @@
 import SchoolItem from "../../../components/Map/SchoolItem";
 import Layout from "../../../components/Layout";
 
-class schoolPage extends React.Component {
+class schoolPage extends React.Component
+{
 
     renderImages = (schoolName) => {
         let imageArray;
