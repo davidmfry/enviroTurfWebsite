@@ -1,8 +1,42 @@
 import SchoolItem from "../../../components/Map/SchoolItem";
 import Layout from "../../../components/Layout";
+import firebase from "../../../config/firebase";
+
 
 class schoolPage extends React.Component
 {
+    componentDidMount ()
+    {
+        const dbRef = firebase.database().ref();
+        const statesRef = dbRef.child('states');
+
+        statesRef.on("value", snap => {
+            let items = snap.val();
+            for(let item in items)
+            {
+                console.log(items[item].schools[0].images)
+            }
+        })
+        // itemsRef.on('value', (snapshot) => {
+        //     let items = snapshot.val();
+        //     let newState = [];
+        //     for (let item in items)
+        //     {
+        //         newState.push({
+        //             id: item,
+        //             headline: items[item].headline,
+        //             headline2: items[item].headline2,
+        //             headerImage: items[item].headerImage,
+        //             content: items[item].content,
+        //             description: items[item].description
+        //         })
+        //
+        //     }
+        //     this.setState({
+        //         items:newState.reverse()
+        //     })
+        // })
+    }
 
     renderImages = (schoolName) => {
         let imageArray;
