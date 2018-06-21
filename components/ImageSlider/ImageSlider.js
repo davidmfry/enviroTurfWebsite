@@ -7,10 +7,10 @@ class ImageSlider extends React.Component
     state = {
         slideCount: 0,
         imageList: [
-            'http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/briawood.JPG',
-            "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/MRA.jpg",
-            "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/Mississippi-College.jpg",
-            "http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/TC-Williams-2.jpg",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1529509245/Front%20Page%20Images/TC-Williams-2.jpg",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1529508887/Front%20Page%20Images/MRA.jpg",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1529508887/Front%20Page%20Images/Mississippi-College.jpg",
+            "http://res.cloudinary.com/enviroturf/image/upload/v1529508893/Front%20Page%20Images/briawood.jpg",
         ],
         time: 7000
     };
@@ -61,7 +61,7 @@ class ImageSlider extends React.Component
 
                         @media screen and (min-width:0) and (min-resolution: .001dpcm)
                         {
-                            background: url(http://res.cloudinary.com/enviroturf/image/upload/v1527127819/topBanner/briawood.JPG)
+                            background: url(http://res.cloudinary.com/enviroturf/image/upload/v1529508893/Front%20Page%20Images/briawood.jpg)
                         }
 
 

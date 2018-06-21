@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import './layout.css';
 import NavBar from './NavBar/NavBar'
+import NavBar2 from './NavBar/NavBar2'
 
 import Footer from '../components/Footer/Footer';
 
@@ -28,7 +29,7 @@ class Layout extends React.Component {
 
 
                 </Head>
-                <NavBar/>
+                <NavBar2/>
                 {this.props.children}
                 <Footer/>
 

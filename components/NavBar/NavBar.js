@@ -13,8 +13,8 @@ class NavBar extends React.Component
                 <ul id="menu">
                     <li><Link href="/"><a>HOME</a></Link></li>
                     <li>
-                    <a>About</a>
-                    <ul className="hidden">
+                    <a onClick="return true">About</a>
+                    <ul className="">
                         <li><Link href="/meetourteam"><a>Meet Our Team</a></Link></li>
                         <li><Link href="/whoweare"><a>Who We Are</a></Link></li>
                         {/*<li><a href="#testimonials">Testimonials</a></li>*/}
