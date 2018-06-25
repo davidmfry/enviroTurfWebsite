@@ -244,6 +244,12 @@ class UsState extends React.Component
                             "/static/img/states/Mississippi/Pearl High School - Pearl, MS_2.JPG",
                             "/static/img/states/Mississippi/Pearl High School - Pearl, MS_3.JPG"]
                     },
+                    {
+                        name: 'Kiln High School - MS',
+                        images: [
+                            "/static/img/states/Mississippi/Kiln High School, Mississippi. Where Brett Favre played HS.jpg"
+                        ]
+                    }
 
                 ];
 

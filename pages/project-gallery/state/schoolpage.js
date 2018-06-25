@@ -192,7 +192,9 @@ class schoolPage extends React.Component
                 return imageArray = ["/static/img/states/Virginia/TC-Williams-1.JPG",
                 "/static/img/states/Virginia/TC-Williams-2.jpg"];
 
-
+            case "Kiln High School - MS":
+                return imageArray = ["/static/img/states/Mississippi/Kiln High School, Mississippi. Where Brett" +
+                " Favre played HS.jpg"];
 
         }
     }
