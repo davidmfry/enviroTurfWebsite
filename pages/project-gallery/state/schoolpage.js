@@ -138,7 +138,8 @@ class schoolPage extends React.Component
                 return imageArray = ["/static/img/states/Mississippi/East Mississippi-1.jpg"]
 
             case "Hancock High School - Kiln, MS":
-                return imageArray = ["/static/img/states/Mississippi/Hancock-1.jpg"]
+                return imageArray = ["/static/img/states/Mississippi/Kiln High School, Mississippi. Where Brett" +
+                " Favre played HS.jpg"];
 
             case "Jackson Prep - Jackson, MS":
                 return imageArray = ["/static/img/states/Mississippi/Jackson-1.jpg"]
@@ -192,9 +193,9 @@ class schoolPage extends React.Component
                 return imageArray = ["/static/img/states/Virginia/TC-Williams-1.JPG",
                 "/static/img/states/Virginia/TC-Williams-2.jpg"];
 
-            case "Kiln High School - MS":
-                return imageArray = ["/static/img/states/Mississippi/Kiln High School, Mississippi. Where Brett" +
-                " Favre played HS.jpg"];
+            case "Picayune Memorial High School - Picayune, MS":
+                return imageArray =["/static/img/states/Mississippi/Picayune Memorial High School - Picayune," +
+                " MS_2b.jpg.jpg"];
 
         }
     }

@@ -207,7 +207,9 @@ class UsState extends React.Component
                     },
                     {
                         name: "Hancock High School - Kiln, MS",
-                        images: ["/static/img/states/Mississippi/Hancock-1.jpg"]
+                        images: [
+                            "/static/img/states/Mississippi/Kiln High School, Mississippi. Where Brett Favre played HS.jpg"
+                        ]
                     },
                     {
                         name: "Jackson Prep - Jackson, MS",
@@ -245,9 +247,9 @@ class UsState extends React.Component
                             "/static/img/states/Mississippi/Pearl High School - Pearl, MS_3.JPG"]
                     },
                     {
-                        name: 'Kiln High School - MS',
+                        name: 'Picayune Memorial High School - Picayune, MS',
                         images: [
-                            "/static/img/states/Mississippi/Kiln High School, Mississippi. Where Brett Favre played HS.jpg"
+                            "/static/img/states/Mississippi/Picayune Memorial High School - Picayune, MS_2b.jpg.jpg"
                         ]
                     }
 
