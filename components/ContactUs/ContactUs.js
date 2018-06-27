@@ -38,7 +38,7 @@ class ContactUs extends React.Component
         return (
             <div className="contact-us">
                 <h1 className="contact-us-title">Contact us</h1>
-                <form className="contact-us-form" action="https://formspree.io/jamesb@etsllcturf.com"
+                <form className="contact-us-form" action="https://formspree.io/jkatherinel@etsllcturf.com"
                       method="POST">
                     <div>
                         <label>* First Name</label>
