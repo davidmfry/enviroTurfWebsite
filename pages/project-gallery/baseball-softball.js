@@ -27,7 +27,7 @@ class BaseBallSoftBall extends React.Component
                     "/static/img/Baseball-Softball/Corinth-3.jpg"]
             },
             {
-                name: "Lou Brock Spotrs Complex, Lindenwood Univ. - St Charles, MO",
+                name: "Lou Brock Sports Complex, Lindenwood Univ. - St Charles, MO",
                 images: [
                     "/static/img/Baseball-Softball/Lou Brock Sports Complex_St Charles, MO_2.jpg",
                     "/static/img/Baseball-Softball/Lou Brock Sports Complex_St Charles, MO_1.jpg"]
