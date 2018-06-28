@@ -163,7 +163,7 @@ class UsState extends React.Component
                 schoolsObj = [
                     {
                         name: "Cambellsville University, Finley Stadium - Cambellsville, KY",
-                        images: ["/static/img/states/Kentucky/Cambellsville-1.jpg"]
+                        images: ["/static/img/states/Kentucky/Finley Stadium, Campbellsville University.jpg"]
                     }
                 ];
                 return (
@@ -206,7 +206,7 @@ class UsState extends React.Component
                         images: ["/static/img/states/Mississippi/East Mississippi-1.jpg"]
                     },
                     {
-                        name: "Hancock High School - Kiln, MS",
+                        name: "Hancock High School - Kiln, MS (Home of Brett Favre)",
                         images: [
                             "/static/img/states/Mississippi/Kiln High School, Mississippi. Where Brett Favre played HS.jpg"
                         ]

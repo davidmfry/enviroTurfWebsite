@@ -113,7 +113,7 @@ class schoolPage extends React.Component
                     "/static/img/states/Kansas/Bethany-3.JPG"];
 
             case "Cambellsville University, Finley Stadium - Cambellsville, KY":
-                return imageArray = ["/static/img/states/Kentucky/Cambellsville-1.jpg"]
+                return imageArray = ["/static/img/states/Kentucky/Finley Stadium, Campbellsville University.jpg"]
 
             case "Madison Ridgeland Academy - Madison, MS":
                 return imageArray = ["/static/img/states/Mississippi/Madison Ridgeland Academy - Madison, MS_1.jpg",
@@ -137,7 +137,7 @@ class schoolPage extends React.Component
             case "East Mississippi Community College - Scooba, MS":
                 return imageArray = ["/static/img/states/Mississippi/East Mississippi-1.jpg"]
 
-            case "Hancock High School - Kiln, MS":
+            case "Hancock High School - Kiln, MS (Home of Brett Favre)":
                 return imageArray = ["/static/img/states/Mississippi/Kiln High School, Mississippi. Where Brett" +
                 " Favre played HS.jpg"];
 

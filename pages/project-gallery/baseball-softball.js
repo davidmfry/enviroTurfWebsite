@@ -27,11 +27,10 @@ class BaseBallSoftBall extends React.Component
                     "/static/img/Baseball-Softball/Corinth-3.jpg"]
             },
             {
-                name: "Lindenwood University - Illinois",
-                images: ["/static/img/Baseball-Softball/DSC02081.JPG",
-                    "/static/img/Baseball-Softball/DSC02083.JPG",
-                    "/static/img/Baseball-Softball/DSC02089.JPG",
-                    "/static/img/Baseball-Softball/Lindenwood Baseball 03.01.2018.JPG"]
+                name: "Lou Brock Spotrs Complex, Lindenwood Univ. - St Charles, MO",
+                images: [
+                    "/static/img/Baseball-Softball/Lou Brock Sports Complex_St Charles, MO_2.jpg",
+                    "/static/img/Baseball-Softball/Lou Brock Sports Complex_St Charles, MO_1.jpg"]
             },
             {
                 name: "Ole Miss - Oxford, MS",
