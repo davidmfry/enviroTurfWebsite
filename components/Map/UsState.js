@@ -42,7 +42,11 @@ class UsState extends React.Component
                     },
                     {
                         name: "Faulkner University - Montgomery, AL",
-                        images: ["/static/img/states/Alabama/Faulkner-1.jpg"]
+                        images: [
+                            "/static/img/states/Alabama/Faulkner-1.jpg",
+                            "/static/img/states/Alabama/Faulkner University_Montgomery, AL_a.jpg",
+                            "/static/img/states/Alabama/Faulkner University_Montgomery, AL_b.jpg"
+                        ]
                     },
                     {
                         name: "Miles College - Fairfield, AL",
@@ -163,7 +167,8 @@ class UsState extends React.Component
                 schoolsObj = [
                     {
                         name: "Cambellsville University, Finley Stadium - Cambellsville, KY",
-                        images: ["/static/img/states/Kentucky/Finley Stadium, Campbellsville University.jpg"]
+                        images: ["/static/img/states/Kentucky/Finley Stadium, Campbellsville University.jpg",
+                        "/static/img/states/Kentucky/Cambellsville-1.jpg"]
                     }
                 ];
                 return (
@@ -208,7 +213,9 @@ class UsState extends React.Component
                     {
                         name: "Hancock High School - Kiln, MS (Home of Brett Favre)",
                         images: [
-                            "/static/img/states/Mississippi/Kiln High School, Mississippi. Where Brett Favre played HS.jpg"
+                            "/static/img/states/Mississippi/Kiln High School, Mississippi. Where Brett Favre played" +
+                            " HS.jpg",
+                            "/static/img/states/Mississippi/Hancock-1.jpg"
                         ]
                     },
                     {
@@ -249,7 +256,8 @@ class UsState extends React.Component
                     {
                         name: 'Picayune Memorial High School - Picayune, MS',
                         images: [
-                            "/static/img/states/Mississippi/Picayune Memorial High School - Picayune, MS_2b.jpg.jpg"
+                            "/static/img/states/Mississippi/Picayune Memorial High School - Picayune, MS_2b.jpg",
+                            "/static/img/states/Mississippi/Picayune-1.jpg"
                         ]
                     }
 

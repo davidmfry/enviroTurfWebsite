@@ -30,7 +30,12 @@ class BaseBallSoftBall extends React.Component
                 name: "Lou Brock Sports Complex, Lindenwood Univ. - St Charles, MO",
                 images: [
                     "/static/img/Baseball-Softball/Lou Brock Sports Complex_St Charles, MO_2.jpg",
-                    "/static/img/Baseball-Softball/Lou Brock Sports Complex_St Charles, MO_1.jpg"]
+                    "/static/img/Baseball-Softball/Lou Brock Sports Complex_St Charles, MO_1.jpg",
+                    "/static/img/Baseball-Softball/Lindenwood Baseball 03.01.2018.JPG",
+                    "/static/img/Baseball-Softball/Lindenwood Baseball.jpg",
+                    "/static/img/Baseball-Softball/DSC02083.JPG",
+                    "/static/img/Baseball-Softball/DSC02081.JPG"
+                ]
             },
             {
                 name: "Ole Miss - Oxford, MS",

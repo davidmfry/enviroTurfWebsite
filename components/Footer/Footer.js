@@ -29,7 +29,7 @@ const Footer = (props) => (
                 PO BOX 321471
                 2580 Lakeland Drive<br/>
                 Flowood, MS 39232 <br/>
-                Email: info@enviroturf.us<br/>
+                Email: katherinel@etsllcturf.com<br/>
                 Phone: 601.664.1010
                 Fax: 601.664.1030
 
