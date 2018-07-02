@@ -170,7 +170,7 @@ class schoolPage extends React.Component
                 "/static/img/states/Missouri/Lindenwood Aerial.jpg"]
 
             case "Southwest Baptist University - Bolivar, MO":
-                return imageArray = ["/static/img/states/Missouri/Southwest Baptist University - Bolivar, MO.jpg"]
+                return imageArray = ["/static/img/states/Missouri/Southwest Baptist University - Bolivar, MO.jpg", "/static/img/states/Missouri/Southwest Baptist Univ. - Bolivar, MO_a.jpg", "/static/img/states/Missouri/Southwest Baptist Univ. - Bolivar, MO_b.jpg", "/static/img/states/Missouri/Southwest Baptist Univ. - Bolivar, MO_c.jpg"];
             case "Weddington Chapel Park - Charlotte, NC":
                 return imageArray =  [
                 "/static/img/states/North Carolina/Weddington-2.JPG",
@@ -188,12 +188,13 @@ class schoolPage extends React.Component
                 return imageArray =  ["/static/img/states/Texas/Dekaney-1.jpg"]
 
             case "Spring High School - Spring, Texas":
-                return imageArray =  ["/static/img/states/Texas/Spring-1.jpg"]
+                return imageArray =  ["/static/img/states/Texas/Spring-1.jpg", "/static/img/states/Texas/Spring High School-Houston, TX_b.jpg", "/static/img/states/Texas/Spring High School-Houston, TX_a.jpg"]
 
             case "Westfield High School - Houston, TX":
-                return imageArray =  [ "/static/img/states/Texas/Westfield-1.jpg",
-                "/static/img/states/Texas/Westfield-2.jpg"]
-
+                return imageArray =
+[ "/static/img/states/Texas/Westfield-1.jpg",
+                "/static/img/states/Texas/Westfield-2.jpg", "/static/img/states/Texas/Westfield High School -" +
+                    " Houston, TX_a.jpg", "/static/img/states/Texas/Westfield High School - Houston, TX_b.jpg", "/static/img/states/Texas/Westfield High School - Houston, TX_c.jpg"];
             case "T.C. Williams High School - Alexandria, VA":
                 return imageArray = ["/static/img/states/Virginia/TC-Williams-1.JPG",
                 "/static/img/states/Virginia/TC-Williams-2.jpg"];

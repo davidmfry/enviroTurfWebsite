@@ -280,7 +280,7 @@ class UsState extends React.Component
                     },
                     {
                         name: "Southwest Baptist University - Bolivar, MO",
-                        images: ["/static/img/states/Missouri/Southwest Baptist University - Bolivar, MO.jpg"]
+                        images: ["/static/img/states/Missouri/Southwest Baptist University - Bolivar, MO.jpg", "/static/img/states/Missouri/Southwest Baptist Univ. - Bolivar, MO_a.jpg", "/static/img/states/Missouri/Southwest Baptist Univ. - Bolivar, MO_b.jpg", "/static/img/states/Missouri/Southwest Baptist Univ. - Bolivar, MO_c.jpg"]
                     }
                 ];
                 return (
@@ -335,12 +335,13 @@ class UsState extends React.Component
                     },
                     {
                         name: "Spring High School - Spring, Texas",
-                        images: ["/static/img/states/Texas/Spring-1.jpg"]
+                        images: ["/static/img/states/Texas/Spring-1.jpg", "/static/img/states/Texas/Spring High School-Houston, TX_b.jpg", "/static/img/states/Texas/Spring High School-Houston, TX_a.jpg"]
                     },
                     {
                         name: "Westfield High School - Houston, TX",
                         images: [ "/static/img/states/Texas/Westfield-1.jpg",
-                            "/static/img/states/Texas/Westfield-2.jpg"]
+                            "/static/img/states/Texas/Westfield-2.jpg", "/static/img/states/Texas/Westfield High School -" +
+                            " Houston, TX_a.jpg", "/static/img/states/Texas/Westfield High School - Houston, TX_b.jpg", "/static/img/states/Texas/Westfield High School - Houston, TX_c.jpg"]
                     }
                 ];
 
