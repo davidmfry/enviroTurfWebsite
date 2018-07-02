@@ -2,12 +2,12 @@
 import * as firebase from 'firebase';
 
 const config = {
-    apiKey: "AIzaSyAIXNIgzTSrP8TFIpfTZaRRkw06f0YL5R8",
-    authDomain: "enviroturf-cd0d2.firebaseapp.com",
-    databaseURL: "https://enviroturf-cd0d2.firebaseio.com",
-    projectId: "enviroturf-cd0d2",
-    storageBucket: "",
-    messagingSenderId: "943344115166"
+    apiKey: "AIzaSyD1L7J20YhcGtz4pCi_gWbRrSRra3g6e80",
+    authDomain: "enviroturfbackend.firebaseapp.com",
+    databaseURL: "https://enviroturfbackend.firebaseio.com",
+    projectId: "enviroturfbackend",
+    storageBucket: "enviroturfbackend.appspot.com",
+    messagingSenderId: "37648242895"
 };
 
 // Makes sure you only have one firebase initialized
