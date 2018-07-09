@@ -37,7 +37,7 @@ class WhatWeProvide extends Component
             <div className="what-we-provide-container">
                 <div className="what-we-wrapper">
                     <div className="what-we-provide-title">
-                        <h1>What we <br/> provide</h1>
+                        <h1>What We <br/> Provide</h1>
                     </div>
 
                     <div className="what-we-provide-info">

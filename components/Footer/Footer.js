@@ -106,7 +106,7 @@ class Footer extends Component
 
 
 
-                <p className="copyright">Some Kind of Idea &copy; 2018</p>
+                <p className="copyright">NetClix &copy; 2018</p>
 
             </footer>
         );
