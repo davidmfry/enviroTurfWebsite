@@ -1,18 +1,29 @@
-
-
 import './contactus.css'
-import firebase from '../../config/firebase';
+import firebase, {homepageDBId} from '../../config/firebase';
 
 
 
 class ContactUs extends React.Component
 {
-    state = {
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: ''
+    constructor(props)
+    {
+        super(props)
+        this.state = {
+            firstName: '',
+            lastName: '',
+            email: '',
+            phone: '',
+            message: '',
+            emailContact: '',
+        }
+    }
+
+    componentDidMount() {
+        firebase.database().ref("homepageitems").child(homepageDBId).on('value', (snapshot) => {
+
+            this.setState({whatWeProvide: snapshot.val().contactEmail})
+
+        })
     }
 
     handleSubmit (values)
@@ -38,7 +49,7 @@ class ContactUs extends React.Component
         return (
             <div className="contact-us">
                 <h1 className="contact-us-title">Contact us</h1>
-                <form className="contact-us-form" action="https://formspree.io/jkatherinel@etsllcturf.com"
+                <form className="contact-us-form" action={`https://formspree.io/${this.state.emailContact}`}
                       method="POST">
                     <div>
                         <label>* First Name</label>

@@ -16,8 +16,8 @@ class LatestNewsSinglePage extends React.Component
 
     componentDidMount()
     {
-        console.log(this.props.newsId);
-        const itemsRef = firebase.database().ref(`latestnews/${this.props.newsId}`);
+
+        const itemsRef = firebase.database().ref('newsitems').child(`${this.props.newsId}`);
         itemsRef.on('value', (snapshot) => {
             let item = snapshot.val();
             this.setState({...item})

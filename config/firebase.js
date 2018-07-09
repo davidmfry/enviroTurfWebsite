@@ -10,5 +10,7 @@ const config = {
     messagingSenderId: "37648242895"
 };
 
+export const homepageDBId = "-LGwp2zviwPGVvEJLTAc";
+
 // Makes sure you only have one firebase initialized
 export default !firebase.apps.length ? firebase.initializeApp(config) : firebase.app();

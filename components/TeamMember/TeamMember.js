@@ -19,7 +19,7 @@ const TeamMember = (props) => (
                     width: 150px;
                     height: 150px;
                     border-radius: 50%;
-                    background-image: url("/static/img/${props.image}");
+                    background-image: url("${props.image}");
                     background-repeat: no-repeat;
                     background-position: center center;
                     background-size: cover;

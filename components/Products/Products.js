@@ -1,49 +1,104 @@
+import React, {Component} from 'react';
+import _ from 'lodash';
+
 import './products.css';
 import ProductCard from "../ProductCard/ProductCard";
+import firebase from "../../config/firebase";
 
-const Products = (props) => (
-    <div className="product-container">
-        <h1>Products</h1>
-        <div className="product-wrapper ">
-            <div className="product-grid">
-                <ProductCard className="product3"  color={"etblue"} ieColor={'#0083EE'} title={'EnviroTurfSF'} description={'Is' +
-                ' specifically' +
-                ' designed to withstand' +
-                ' intense' +
-                ' use while' +
-                ' retaining the softness and playing characteristics that today’s student athlete desires. The natural looking fiber is recommended for installations experiencing more than thirty hours of use per week. Tough is the best word that describes EnviroTurfSF. This product is composed of from 40-46oz of polyethylene fiber with a three ply backing. The maximum fiber coverage provides a beautiful appearance while reducing rubber “fly up.”'}/>
 
-                <div className="product-image pi2">
-                    <img src="/static/img/EnviroTurfSF.png" alt="EnviroTurm SF Product"/>
+
+class Products extends Component
+{
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            products: {},
+            productsArray: []
+
+        }
+    }
+
+    componentDidMount()
+    {
+        firebase.database().ref("products").on('value', (snapshot) => {
+            this.setState({products: snapshot.val(), productsArray: _.toArray(snapshot.val())})
+
+        });
+
+
+    }
+
+    renderProduct(index)
+    {
+        if(this.state.productsArray[index])
+        {
+            return (
+                <ProductCard
+                    className={`product${index + 1}`}
+                    color={this.state.productsArray[index].titleColor}
+                    ieColor={this.state.productsArray[index].titleColor}
+                    title={this.state.productsArray[index].title}
+                    description={this.state.productsArray[index].description}/>
+            )
+        }
+
+
+
+
+
+    }
+
+    renderProducts()
+    {
+
+        let newArray = this.state.productsArray.slice(2);
+
+        return _.map(newArray, (product, index) => {
+            return (
+                <ProductCard key={index} className={`product${index + 1}`}  color={product.titleColor} ieColor={product.titleColor} title={product.title} description={product.description}/>
+            )
+        })
+
+
+    }
+
+
+    render() {
+
+
+        return (
+            <div className="product-container">
+                <h1>Products</h1>
+                <div className="product-wrapper ">
+                    <div className="product-grid">
+                        {this.state.productsArray ? this.renderProduct(0) : null}
+
+
+                        <div className="product-image pi2">
+                            <img src="/static/img/EnviroTurfSF.png" alt="EnviroTurm SF Product"/>
+                        </div>
+
+                    </div>
+
+                    <div className="product-grid">
+                        {this.state.productsArray ? this.renderProduct(1) : null}
+
+                        <div className="product-image pi1">
+                            <img src="/static/img/EnviroTurfM.png" alt="EnviroTurm M Product"/>
+                        </div>
+                    </div>
+
+                    <div className="product-grid">
+                        {this.state.products ? this.renderProducts() : null}
+
+                    </div>
+
                 </div>
 
             </div>
-
-            <div className="product-grid">
-                <ProductCard className="product2"  color={"etgreen"} ieColor={'#0D8703'} title={'EnviroTurfM'} description={'sets the' +
-                ' standard for resilience and' +
-                ' performance in an' +
-                ' extruded fiber. It provides the look and feel of natural grass and reduces glare due to the dispersement of light reflection while providing superior ball roll after extensive use. We use 46oz of fiber with at least 28oz of polyurethane over a three ply backing. The extruded fiber offers the ultimate combination in softness and durability, giving it an unsurpassed, grass-like quality.'}/>
-
-                <div className="product-image pi1">
-                    <img src="/static/img/EnviroTurfM.png" alt="EnviroTurm M Product"/>
-                </div>
-            </div>
-
-            <div className="product-grid">
-                <ProductCard className="product1" color={"etorange"} ieColor={'#FF910E'} title={'EnviroTurfDF'} description={'is a' +
-                ' strategically' +
-                ' blended' +
-                ' combination' +
-                ' of tough EnvirotTurfM and soft EnviroTurfSF. Superior appearance, feel, playability, consistency, and' +
-                ' longevity come together in our EnviroTurfDF. Unique to EnviroTurf, EnviroTurfDF combines the best features of EnviroTurfM and EnviroTurfSF, offering a field that is lush, beautiful, and durable.'}/>
-
-                <div></div>
-            </div>
-
-        </div>
-
-    </div>
-)
+        );
+    }
+}
 
 export default Products
