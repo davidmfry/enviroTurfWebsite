@@ -18,7 +18,8 @@ class Layout extends React.Component {
         return (
             <div>
                 <Head>
-                    <title>EnviroTurf</title>
+                    <title>EnviroTurf | The Next Generation in Synthetic Turf</title>
+                    <meta name="description" content="Enviroturf was established in 2006 with a goal of providing superior products that are durable, cost efficient and aesthetically pleasing while maintaining a commitment to supplying the safest surface possible."/>
                     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
                     <meta charSet="UTF-8"/>
                     {/*<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"/>*/}
