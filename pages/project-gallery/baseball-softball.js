@@ -1,4 +1,8 @@
+import _ from 'lodash';
+
 import './baseball-softball.css'
+import firebase from '../../config/firebase';
+
 import Layout from '../../components/Layout';
 import SchoolItem from '../../components/Map/SchoolItem';
 
@@ -8,49 +12,24 @@ class BaseBallSoftBall extends React.Component
     {
         super(props)
         this.state = {
+            items: []
         }
     }
 
-    componentDidMount ()
+    componentDidMount()
     {
+        firebase.database().ref("baseballsoftball").child("schools").on('value', (snapshot) => {
+            this.setState({items: snapshot.val()})
 
+        })
     }
 
     renderImages = () =>
     {
 
-        const schoolsObj = [
-            {
-                name: "Corinth High School - Corinth, MS",
-                images: ["/static/img/Baseball-Softball/Corinth-1.jpg",
-                    "/static/img/Baseball-Softball/Corinth-2.jpg",
-                    "/static/img/Baseball-Softball/Corinth-3.jpg"]
-            },
-            {
-                name: "Lou Brock Sports Complex, Lindenwood Univ. - St Charles, MO",
-                images: [
-                    "/static/img/Baseball-Softball/Lou Brock Sports Complex_St Charles, MO_2.jpg",
-                    "/static/img/Baseball-Softball/Lou Brock Sports Complex_St Charles, MO_1.jpg",
-                    "/static/img/Baseball-Softball/Lindenwood Baseball 03.01.2018.JPG",
-                    "/static/img/Baseball-Softball/Lindenwood Baseball.jpg",
-                    "/static/img/Baseball-Softball/DSC02083.JPG",
-                    "/static/img/Baseball-Softball/DSC02081.JPG"
-                ]
-            },
-            {
-                name: "Ole Miss - Oxford, MS",
-                images: ["/static/img/Baseball-Softball/Ole-Miss-1.png"]
-            },
-            {
-                name: "Sabetha Baseball Field - Sabetha, KS",
-                images: ["/static/img/Baseball-Softball/Sabetha-1.jpg",
-                    "/static/img/Baseball-Softball/Sabetha-2.jpg"]
-            },
-
-        ];
         return (
-            schoolsObj.map( (school) => (
-                <SchoolItem name={school.name} images={school.images}/>
+            _.map(this.state.items, (school, key) => (
+                <SchoolItem key={key} name={school.schoolName} images={school.imageUrls}/>
             ))
         );
 
