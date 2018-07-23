@@ -37,7 +37,7 @@ class NavBar2 extends React.Component
                     </div>
                 </div>
                 <Link href="/contactus"><a>Contact Us</a></Link>
-                <a href="javascript:void(0);" style={{fontSize:15}} className="icon"
+                <a href="javascript:void(0);" style={{fontSize:25}} className="icon"
                    onClick={() => this.myFunction()}>&#9776;</a>
             </div>
         )

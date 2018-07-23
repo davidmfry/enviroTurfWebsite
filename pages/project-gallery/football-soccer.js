@@ -8,7 +8,7 @@ class FootBallSoccer extends React.Component
 {
     constructor (props)
     {
-        super(props)
+        super(props);
         this.state = {
             activeState: null
         }

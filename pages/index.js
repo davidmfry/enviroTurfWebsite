@@ -19,6 +19,7 @@ import MeetOurTeam from "../components/MeetOurTeam/MeetOurTeam";
 import LatestNews from "../components/LatestNews/LatestNews";
 import Products from "../components/Products/Products";
 import ContactUs from "../components/ContactUs/ContactUs";
+import FootballSoccer from "../components/FootballSoccer/FootballSoccer"
 
 
 class Index extends React.Component{
@@ -39,6 +40,7 @@ class Index extends React.Component{
                 <BigQuote/>
                 {/*<div className="color-section"></div>*/}
                 <WhatWeProvide/>
+                <FootballSoccer/>
                 <ScrollableAnchor id={'meet-our-team'}>
                     <MeetOurTeam/>
                 </ScrollableAnchor>
