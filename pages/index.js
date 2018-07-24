@@ -40,7 +40,17 @@ class Index extends React.Component{
                 <BigQuote/>
                 {/*<div className="color-section"></div>*/}
                 <WhatWeProvide/>
+                <div className="color-section"></div>
                 <FootballSoccer/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div className="color-section"></div>
                 <ScrollableAnchor id={'meet-our-team'}>
                     <MeetOurTeam/>
                 </ScrollableAnchor>

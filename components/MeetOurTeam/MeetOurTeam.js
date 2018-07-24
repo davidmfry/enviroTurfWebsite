@@ -40,7 +40,7 @@ class MeetOurTeam extends Component
     render() {
         return (
             <div className="meet-our-team-container">
-                <h1>Meet Our Team</h1>
+                <h1 className="meet-our-team-title">Meet Our Team</h1>
                 <div className="meet-our-team-wrapper">
                     {this.renderTeamMembers()}
                 </div>
