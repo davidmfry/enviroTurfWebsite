@@ -27,7 +27,11 @@ class LatestNews extends React.Component
 
     renderLatestNewsItems = () =>
     {
-        return _.map(this.state.items, (item, key) => {
+        // changes the object into an array to the news items can show the newwest item first.
+        let newsItemsArray = _.values(this.state.items)
+        newsItemsArray.reverse();
+
+        return _.map(newsItemsArray, (item, key) => {
 
             return (
                 <Link key={key} as={`/latestnews/${key}`} href={`/latestnews/latestnews?id=${key}`}><a><NewsItem  id={key} image={item.headerImage} headline={item.headline} description={item.description}/></a></Link>
