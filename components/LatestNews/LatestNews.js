@@ -32,7 +32,7 @@ class LatestNews extends React.Component
         // console.log(newsItemsArray)
         newsItemsArray.reverse();
 
-        let renderArray = []
+        // let renderArray = []
         let keysArray = Object.keys(this.state.items)
         keysArray.reverse()
 
@@ -47,7 +47,7 @@ class LatestNews extends React.Component
 
         return _.map(newsItemsArray, (item, key) => {
             return (
-                <Link key={keysArray[key]} as={`/latestnews/${keysArray[key]}`} href={`/latestnews/latestnews?id=${key}`}><a><NewsItem  id={keysArray[key]} image={item.headerImage} headline={item.headline} description={item.description}/></a></Link>
+                <Link key={keysArray[key]} as={`/latestnews/${keysArray[key]}`} href={`/latestnews/latestnews?id=${keysArray[key]}`}><a><NewsItem  id={keysArray[key]} image={item.headerImage} headline={item.headline} description={item.description}/></a></Link>
             )
         });
 
